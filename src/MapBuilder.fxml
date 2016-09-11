@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0000999999975" prefWidth="1680.0" style="&#10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane fx:id="mapView" layoutX="620.0" layoutY="22.0" prefHeight="709.0" prefWidth="1046.0" style="-fx-border-color: black;&#10;-fx-border-width: 1;&#10;" />
+    <FlowPane hgap="10.0" layoutX="3.0" layoutY="3.0" minWidth="595.9998779296875" prefHeight="146.0" prefWidth="607.0" vgap="15.0">
+      <children>
+        <TitledPane animated="false" collapsible="false" expanded="true" prefHeight="140.0" prefWidth="597.0" text="Backgrounds">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <FlowPane hgap="10.0" layoutX="14.0" layoutY="14.0" prefHeight="88.0" prefWidth="565.0">
+                  <children>
+                    <ImageView id="grassBackgorund" fx:id="grassBackground" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@GrassBackground.png" />
+                      </image>
+                    </ImageView>
+                    <ImageView fx:id="blackBackground" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@BlackBackground.png" />
+                      </image>
+                    </ImageView>
+                    <ImageView fx:id="testBackground" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                        <Image url="@TestBack.png" />
+                      </image>
+                    </ImageView>
+                  </children>
+                </FlowPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </TitledPane>
+      </children>
+    </FlowPane>
+    <ScrollPane hbarPolicy="NEVER" layoutX="19.0" layoutY="176.0" prefHeight="300.0" prefWidth="579.0">
+      <content>
+        <FlowPane fx:id="imageFlow" hgap="5.0" prefHeight="292.0" prefWidth="565.0" vgap="5.0" />
+      </content>
+    </ScrollPane>
+    <HBox alignment="CENTER_RIGHT" layoutX="9.0" layoutY="706.0" prefHeight="33.0" prefWidth="597.0" spacing="5.0">
+      <children>
+        <Button fx:id="addToMap" mnemonicParsing="false" text="Add to map" />
+        <Button fx:id="undo" mnemonicParsing="false" text="Undo" />
+        <Button fx:id="redo" mnemonicParsing="false" text="Redo" />
+        <CheckBox fx:id="hostile" mnemonicParsing="false" text="Hostile" />
+        <TextField fx:id="fileName" prefWidth="200.0" promptText="File name" />
+        <Button fx:id="save" mnemonicParsing="false" text="Save" />
+        <Button fx:id="clear" mnemonicParsing="false" text="Clear All" />
+      </children>
+    </HBox>
+    <ImageView fx:id="selectedSpriteImage" fitHeight="100.0" fitWidth="104.0" layoutX="31.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true" />
+    <Label fx:id="filePath" layoutX="19.0" layoutY="487.0" text="" />
+    <Button fx:id="treeBorder" layoutX="490.0" layoutY="149.0" mnemonicParsing="false" text="Add Tree Border">
+      <tooltip>
+        <Tooltip text="Make sure to add the tree border before adding anything else!!!!!!!!!!">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Tooltip>
+      </tooltip>
+    </Button>
+    <ComboBox fx:id="categoryChoice" layoutX="18.0" layoutY="149.0" prefHeight="21.0" prefWidth="211.0" promptText="Categories">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <FlowPane hgap="10.0" layoutX="18.0" layoutY="509.0" prefHeight="88.0" prefWidth="579.0" vgap="10.0">
+      <children>
+        <Label text="X:" />
+        <TextField fx:id="x" prefWidth="200.0" promptText="X-Coordinate" />
+        <Label text="Y:" />
+        <TextField fx:id="y" prefWidth="200.0" promptText="Y-Coordinate" />
+      </children>
+    </FlowPane>
+    <CheckBox fx:id="obstacle" disable="true" layoutX="532.0" layoutY="690.0" mnemonicParsing="false" text="isObstacle" visible="false" />
+  </children>
+</AnchorPane>
