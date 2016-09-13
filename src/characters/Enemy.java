@@ -1,5 +1,7 @@
 package characters;
 
+import java.lang.*;
+
 /**
  * characters.Enemy subclass for all enemies to be implemented
  * @author Matthew Gimbut
@@ -9,7 +11,9 @@ public class Enemy extends Character {
 
 	private String customMusic;
 	private boolean isSelected;
-	
+	private EnemyTypes type = EnemyTypes.TestEnemy; //placeholder for now
+	//TODO have all constructors take an EnemyTypes
+
 	public Enemy(String name, int lvl, int currentHP, int maxHP, int currentMana, int maxMana, int atk, int magic, int def, int speed) {
 		super(name, lvl, currentHP, maxHP, currentMana, maxMana, atk, magic, def, speed, 0, 0);
 		this.isSelected = false;
@@ -39,18 +43,18 @@ public class Enemy extends Character {
 	}
 
 	public Enemy(String name) {
-		super(name , 1, 100, 100, 100, 100, 4, 4, 4, 10, 0, 10);
+		super(name , 1, 100, 100, 100, 100, 4, 4, 4, 4, 0, 10);
 		this.isSelected = false;
 		this.setImage("Images\\Enemies\\Enemy0.png");
 		this.customMusic = "";
 	}
-	
+
 	public Enemy(String name, String image) {
 		this(name);
 		this.setImage(image);
 		this.customMusic = "";
 	}
-	
+
 	public Enemy(String name, String image, String customMusic) {
 		this(name, image);
 		this.customMusic = customMusic;
@@ -67,11 +71,11 @@ public class Enemy extends Character {
 		this.setImage(west);
 		this.customMusic = customMusic;
 	}
-	
+
 	public void setSelected(boolean isSelected) {
 		this.isSelected = isSelected;
 	}
-	
+
 	public boolean getSelected() {
 		return isSelected;
 	}
@@ -83,5 +87,7 @@ public class Enemy extends Character {
 	public void setCustomMusic(String customMusic) {
 		this.customMusic = customMusic;
 	}
-		
+
+	public EnemyTypes enemyType() { return this.type; }
+
 }

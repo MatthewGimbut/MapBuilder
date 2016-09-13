@@ -27,6 +27,15 @@ public class Potion extends Consumable {
 		this.setSimpleName(type.toString());
 	}
 
+	public Potion(PotionType type, int amount, int value) {
+		super(0, 0, 0, 0, .1, 0, 0, value, Rarity.COMMON);
+		this.type = type;
+		this.amount = amount;
+		this.setImageLocation("Images\\Consumables\\Potions\\" + type + ".png");
+		this.setItemToolTipText("A(n) " + type);
+		this.setSimpleName(type.toString());
+	}
+
 	public int getAmount() {
 		return amount;
 	}

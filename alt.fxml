@@ -22,17 +22,17 @@
                   <children>
                     <ImageView id="grassBackgorund" fx:id="grassBackground" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                        <Image url="@GrassBackground.png" />
+                        <Image url="@src/GrassBackground.png" />
                       </image>
                     </ImageView>
                     <ImageView fx:id="blackBackground" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                        <Image url="@BlackBackground.png" />
+                        <Image url="@src/BlackBackground.png" />
                       </image>
                     </ImageView>
                     <ImageView fx:id="testBackground" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                       <image>
-                        <Image url="@TestBack.png" />
+                        <Image url="@src/TestBack.png" />
                       </image>
                     </ImageView>
                   </children>
@@ -79,14 +79,93 @@
         </FXCollections>
       </items>
     </ComboBox>
-    <FlowPane hgap="10.0" layoutX="18.0" layoutY="506.0" minHeight="42.0" prefHeight="42.0" prefWidth="579.0" vgap="5.0">
+    <FlowPane hgap="10.0" layoutX="18.0" layoutY="506.0" minHeight="42.0" prefHeight="42.0" prefWidth="593.0" vgap="5.0">
       <children>
         <Label text="X:" />
         <TextField fx:id="x" prefWidth="200.0" promptText="X-Coordinate" />
         <Label text="Y:" />
         <TextField fx:id="y" prefWidth="200.0" promptText="Y-Coordinate" />
+        <Label prefHeight="16.0" prefWidth="593.0" text="Image placed while creating items is not accurate. If it is a generic item, the generic image will be used. Unique fields not mandatory." wrapText="true">
+          <font>
+            <Font size="10.0" />
+          </font>
+        </Label>
       </children>
     </FlowPane>
     <CheckBox fx:id="obstacle" disable="true" layoutX="532.0" layoutY="690.0" mnemonicParsing="false" text="isObstacle" visible="false" />
+    <FlowPane fx:id="itemStatFlow" hgap="5.0" layoutX="119.0" layoutY="553.0" minHeight="126.0" prefHeight="140.0" prefWidth="487.0" visible="true">
+      <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="129.0" spacing="5.0">
+          <children>
+            <Label text="Attack:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="134.0" spacing="5.0">
+          <children>
+            <Label text="Defense:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="134.0" spacing="5.0">
+          <children>
+            <Label text="Magic:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="134.0" spacing="5.0">
+          <children>
+            <Label text="Speed:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="134.0" spacing="5.0">
+          <children>
+            <Label text="Weight:" />
+            <TextField prefWidth="84.0" promptText="Nearest tenth" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="140.0" spacing="5.0">
+          <children>
+            <Label text="HP Boost:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="163.0" spacing="5.0">
+          <children>
+            <Label text="Mana Boost:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="134.0" spacing="5.0">
+          <children>
+            <Label text="Gold:" />
+            <TextField prefWidth="84.0" promptText="Integers only" />
+          </children>
+        </HBox>
+        <HBox prefHeight="27.0" prefWidth="487.0">
+          <children>
+            <HBox prefHeight="33.0" prefWidth="211.0" spacing="5.0">
+              <children>
+                <Label text="Unique Name:" />
+                <TextField prefWidth="121.0" />
+              </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="220.00009999999747" spacing="5.0">
+              <children>
+                <TextField prefWidth="121.0" />
+                <Button mnemonicParsing="false" text="Choose image" />
+              </children>
+            </HBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="22.0" prefWidth="220.0" spacing="5.0">
+          <children>
+            <Label text="Unique Tooltip:" />
+            <TextField prefWidth="121.0" />
+          </children>
+        </HBox>
+      </children>
+    </FlowPane>
   </children>
 </AnchorPane>

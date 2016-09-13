@@ -165,11 +165,11 @@ public class MapParser {
                                 parseInt(info[3]), parseInt(info[4]), determineCardinal(info[5]), info[6]));
 					break;
 
-				case "over":
+				case "upper":
 					objects.add(new UpperLayer(parseInt(info[1]), parseInt(info[2]), info[3]));
 					break;
 
-				case "under":
+				case "lower":
 					objects.add(new LowerLayer(parseInt(info[1]), parseInt(info[2]), info[3]));
 					break;
 
@@ -388,12 +388,12 @@ public class MapParser {
 
 					case "UpperLayer":
 						UpperLayer o = (UpperLayer) sprite;
-						osw.append("over"+ DELIMITER_STRING +o.getX()+ DELIMITER_STRING +o.getY()+ DELIMITER_STRING +o.getImageLocation()+"\n");
+						osw.append("upper"+ DELIMITER_STRING +o.getX()+ DELIMITER_STRING +o.getY()+ DELIMITER_STRING +o.getImageLocation()+"\n");
 						break;
 
 					case "LowerLayer":
 						LowerLayer u = (LowerLayer) sprite;
-						osw.append("under"+ DELIMITER_STRING +u.getX()+ DELIMITER_STRING +u.getY()+ DELIMITER_STRING +u.getImageLocation()+"\n");
+						osw.append("lower"+ DELIMITER_STRING +u.getX()+ DELIMITER_STRING +u.getY()+ DELIMITER_STRING +u.getImageLocation()+"\n");
 						break;
 
 					case "Lootable":
@@ -418,9 +418,9 @@ public class MapParser {
                                     enemy.getName() + DELIMITER_STRING + enemy.getLvl() + DELIMITER_STRING + enemy.getCurrentHP() + DELIMITER_STRING +
                                     enemy.getMaxHP() + DELIMITER_STRING + enemy.getCurrentMana() + DELIMITER_STRING + enemy.getMaxMana() +
                                     DELIMITER_STRING + enemy.getAtk() + DELIMITER_STRING + enemy.getMagic() + DELIMITER_STRING + enemy.getDef() +
-                                    DELIMITER_STRING + enemy.getSpeed() + DELIMITER_STRING + npc.getNPC().getNorthImage() + DELIMITER_STRING +
-									npc.getNPC().getSouthImage() + DELIMITER_STRING +  npc.getNPC().getEastImage() + DELIMITER_STRING +
-									npc.getNPC().getWestImage() + DELIMITER_STRING + enemy.getCustomMusic());
+                                    DELIMITER_STRING + enemy.getSpeed() + DELIMITER_STRING + "file:" + npc.getNPC().getNorthImage() + DELIMITER_STRING +
+									"file:" +npc.getNPC().getSouthImage() + DELIMITER_STRING +  "file:" +npc.getNPC().getEastImage() + DELIMITER_STRING +
+									"file:" +npc.getNPC().getWestImage() + DELIMITER_STRING + enemy.getCustomMusic());
 							for (String dialogue : npc.getMessage()) {
 								osw.append(DELIMITER_STRING + dialogue);
 							}
@@ -599,7 +599,7 @@ public class MapParser {
     private  boolean intersectsObstacle(ArrayList<Sprite> mapItems, Sprite testSprite) {
         //Rectangle2D playerBounds = player.getBounds();
         for(Sprite sprite : mapItems) {
-            if(testSprite.getBounds().intersects(sprite.getBounds())) {// || testSprite.getBounds().intersects(playerBounds)) {
+            if(testSprite.getBounds().intersects(sprite.getBounds()) && !(testSprite instanceof  LowerLayer)) {// || testSprite.getBounds().intersects(playerBounds)) {
                 return true;
             }
         }

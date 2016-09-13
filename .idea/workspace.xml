@@ -1,7 +1,696 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a86e37da-31fb-45b3-b482-cf2407e3ef48" name="Default" comment="" />
+    <list default="true" id="a86e37da-31fb-45b3-b482-cf2407e3ef48" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Potion Test.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/GatherTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/InteractTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/KillTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/LocationTrigger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/Quest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/QuestHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/Task.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/Trigger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.map" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Cloth Down Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Left/Cloth Left Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Right/Cloth Right Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/bronze/Up/Cloth Up Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Cloth Down Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Left/Cloth Left Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Right/Cloth Right Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/cloth/Up/Cloth Up Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Cloth Down Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Left/Cloth Left Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Right/Cloth Right Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/iron/Up/Cloth Up Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Cloth Down Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Left/Cloth Left Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Right/Cloth Right Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/leather/Up/Cloth Up Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Cloth Down Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Left/Cloth Left Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Right/Cloth Right Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/steel/Up/Cloth Up Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Cloth Down Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Left/Cloth Left Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Right/Cloth Right Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Armors/wood/Up/Cloth Up Test.pdn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/BlackBackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Blank24x24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Blank32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/DarkDoorwayTall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodFloor256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodFloor256x128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodFloor256x256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodFloor32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodRoofLeft32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodRoofRight32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Buildings/WoodWall32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Characters/ElRato.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Characters/ElRato32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Characters/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Consumables/Potions/Agility Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Consumables/Potions/Attack Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Consumables/Potions/Defense Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Consumables/Potions/Health Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Consumables/Potions/Mana Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Enemies/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Exit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/ExitVisible.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/GrassBackground.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/GrassBackgroundBIGNew.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/GrassBackgroundSmall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/MainMenu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Misc/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Misc/conversation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Nature/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Neutral/Neutral0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Neutral/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/NotBlank32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/NotBlank40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Player/PlayerEast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Player/PlayerNorth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Player/PlayerSouth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Player/PlayerWest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Player/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/RoomCLogo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/SaveArea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/TestBack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Torch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Torch2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Torch3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/TorchAnimated.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/TorchTest.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/ChestArea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/EmptyArea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Enemy0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Enemy1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Garbage/PlayerEast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Garbage/PlayerNorth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Garbage/PlayerSouth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Garbage/PlayerWest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/PlayerEast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/PlayerNorth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/PlayerSouth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/PlayerWest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/RustyKnife.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/TestAnimate/TestAnimate1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/TestAnimate/TestAnimate2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/TestAnimate/TestAnimate3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Unused/TreeArea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/Cleaver/Cleaver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/RustyKnife/RustyKnife.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/Spells/FireSpellBook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/bronze/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/bronze/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/bronze/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/bronze/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/bronze/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/iron/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/iron/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/iron/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/iron/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/iron/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/steel/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/steel/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/steel/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/steel/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/steel/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/stone/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/stone/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/stone/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/stone/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/stone/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/testSword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/wood/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/wood/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/wood/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/wood/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Weapons/wood/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/gem_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/gem_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/gem_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/gem_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/potion_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/potion_1_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/potion_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/potion_7_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/scroll_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/128px/sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/gem_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/gem_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/gem_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/gem_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/potion_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/potion_1_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/potion_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/potion_7_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/scroll_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/256px/sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/gem_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/gem_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/gem_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/gem_9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/potion_12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/potion_1_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/potion_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/potion_7_empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/scroll_5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/PNG/64px/sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/acid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/armored-pants.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/arrowhead.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/battered-axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/battle-axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/battle-gear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/beech.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/black-book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/black-knight-helm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/blast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/bone-knife.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/book-cover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/bookmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/bookmarklet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/bordered-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/bowie-knife.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/bowman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/breastplate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/brick-wall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/broad-dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/broadsword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/broken-heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/broken-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/brutal-helm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/burning-blobs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/burning-book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/burning-embers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/burning-eye.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/burning-meteor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/campfire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/candle-holder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/candle-light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/candlebright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/castle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/chain-mail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/checked-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/cheese-wedge.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/chicken-leg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/claw-hammer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/conversation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/corn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/cracked-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/crenulated-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/crested-helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/crossbow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/crossed-swords.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/crown.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/defensive-wall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/domino-mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/duck.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/earth-crack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/electric.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/envelope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/evil-book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/fire-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/fire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/frozen-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem-chain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem-necklace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem-pendant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_amber/gem_amber__x1_1_png_1354831639.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_amber/gem_amber__x1_iconic_png_1354831638.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_diamond/gem_diamond__x1_1_png_1354831647.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_diamond/gem_diamond__x1_iconic_png_1354831646.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_moonstone/gem_moonstone__x1_1_png_1354831649.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_moonstone/gem_moonstone__x1_iconic_png_1354831649.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_ruby/gem_ruby__x1_1_png_1354831652.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_ruby/gem_ruby__x1_iconic_png_1354831651.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_sapphire/gem_sapphire__x1_1_png_1354831654.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gem_sapphire/gem_sapphire__x1_iconic_png_1354831654.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/ghost.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/gold-bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/heavy-rain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/horned-helm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/ice-bolt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/key.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/lamellar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/leather-boot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/leather-vest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/locked-chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/mail-shirt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/mailed-fist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/orb-wand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/plastron.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/pocket-bow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/relic-blade.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/roman-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/rosa-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/round-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/scroll-unfurled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/shard-sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/sharp-halberd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/shield-echoes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/shorts.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/sickle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/stiletto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/templar-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/viking-shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/visored-helm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/water-drop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/white-book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/wood-axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/future use/zeus-sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Enemies/Enemy0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Enemies/Enemy1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Enemies/Enemy2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Enemies/Enemy3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Enemies/elrato.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Generic Obstacles/Tree.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Generic Obstacles/Tree1x3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Generic Obstacles/Tree4x1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Generic Obstacles/Tree50x50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Generic Obstacles/TreeNew.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/bronze/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/cloth/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/iron/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/leather/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/steel/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Down/Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Down/Chest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Down/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Down/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Down/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Down/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Gloves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Left/Cloth Left Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Left/Cloth Left Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Left/Cloth Left Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Left/Cloth Left Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Left/Cloth Left Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Legs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Right/Cloth Right Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Right/Cloth Right Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Right/Cloth Right Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Right/Cloth Right Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Right/Cloth Right Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Shield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Up/Cloth Up Boots.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Up/Cloth Up Cuirass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Up/Cloth Up Gauntlets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Up/Cloth Up Greaves.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Armors/wood/Up/Cloth Up Helmet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Consumables/Potions/Agility Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Consumables/Potions/Attack Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Consumables/Potions/Defense Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Consumables/Potions/Health Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Consumables/Potions/Mana Potion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/Cleaver/Cleaver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/RustyKnife/RustyKnife.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/Spells/FireSpellBook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/bronze/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/bronze/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/bronze/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/bronze/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/bronze/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/iron/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/iron/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/iron/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/iron/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/iron/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/steel/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/steel/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/steel/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/steel/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/steel/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/stone/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/stone/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/stone/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/stone/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/stone/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/testSword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/wood/axe/Axe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/wood/dagger/Dagger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/wood/mace/Mace.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/wood/spear/Spear.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Items/Weapons/wood/sword/Sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Lootables/ChestArea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Lootables/ChestAreaNew.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Lootables/SmallCrates.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Miscellaneous/ExitVisible.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Miscellaneous/NotBlank40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Miscellaneous/SaveArea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Miscellaneous/TorchAnimated.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/GenericNeutral/GenericNeutralEast.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/GenericNeutral/GenericNeutralNorth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/GenericNeutral/GenericNeutralSouth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/GenericNeutral/GenericNeutralWest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/KevinDunphy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/Neutral0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/RyanNufrio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Neutral NPCs/Sherk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/DarkDoorwayTall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodFloor256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodFloor256x128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodFloor256x256.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodFloor32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodRoofLeft32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodRoofRight32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sprites/Structures/WoodWall32.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilderController.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilderController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/characters/Enemy.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/characters/Enemy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/characters/Neutral.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/characters/Neutral.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Boots.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Boots.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/ChestPiece.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/ChestPiece.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Gloves.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Gloves.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Helmet.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Helmet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Legs.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Legs.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Shield.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Armor/Shield.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/items/Consumables/Potion.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/items/Consumables/Potion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/sprites/NPC.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/sprites/NPC.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestMap.map" afterPath="$PROJECT_DIR$/TestMap.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilder.fxml" afterPath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilder.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapBuilder.fxml" afterPath="$PROJECT_DIR$/src/MapBuilder.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapBuilderController.java" afterPath="$PROJECT_DIR$/src/MapBuilderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/characters/Enemy.java" afterPath="$PROJECT_DIR$/src/characters/Enemy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/characters/Neutral.java" afterPath="$PROJECT_DIR$/src/characters/Neutral.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/Boots.java" afterPath="$PROJECT_DIR$/src/items/Armor/Boots.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/ChestPiece.java" afterPath="$PROJECT_DIR$/src/items/Armor/ChestPiece.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/Gloves.java" afterPath="$PROJECT_DIR$/src/items/Armor/Gloves.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/Helmet.java" afterPath="$PROJECT_DIR$/src/items/Armor/Helmet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/Legs.java" afterPath="$PROJECT_DIR$/src/items/Armor/Legs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/Shield.java" afterPath="$PROJECT_DIR$/src/items/Armor/Shield.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Consumables/Potion.java" afterPath="$PROJECT_DIR$/src/items/Consumables/Potion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map/MapParser.java" afterPath="$PROJECT_DIR$/src/map/MapParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sprites/NPC.java" afterPath="$PROJECT_DIR$/src/sprites/NPC.java" />
+    </list>
     <ignored path="MapBuilder.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,11 +711,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
+      <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="1021" column="27" selection-start-line="1021" selection-start-column="27" selection-end-line="1021" selection-end-column="27" />
+            <state relative-caret-position="493">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,14 +723,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
+      <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3553">
-              <caret line="245" column="22" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="422" column="118" selection-start-line="416" selection-start-column="28" selection-end-line="422" selection-end-column="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Armor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/items/Armor/Armor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArmorType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/items/Armor/ArmorType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Neutral.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/characters/Neutral.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,6 +784,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -66,12 +798,21 @@
         <option value="$PROJECT_DIR$/src/MapBuilder.fxml" />
         <option value="$PROJECT_DIR$/src/items/Weapons/Mace.java" />
         <option value="$PROJECT_DIR$/src/characters/Player.java" />
-        <option value="$PROJECT_DIR$/src/characters/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/characters/Neutral.java" />
         <option value="$PROJECT_DIR$/src/map/MapContainer.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
+        <option value="$PROJECT_DIR$/src/quests/LocationTrigger.java" />
+        <option value="$PROJECT_DIR$/src/characters/Enemy.java" />
+        <option value="$PROJECT_DIR$/src/items/Consumables/Potion.java" />
+        <option value="$PROJECT_DIR$/src/characters/Neutral.java" />
+        <option value="$PROJECT_DIR$/src/items/Armor/Boots.java" />
+        <option value="$PROJECT_DIR$/src/items/Armor/ChestPiece.java" />
+        <option value="$PROJECT_DIR$/src/items/Armor/Gloves.java" />
+        <option value="$PROJECT_DIR$/src/items/Armor/Helmet.java" />
+        <option value="$PROJECT_DIR$/src/items/Armor/Legs.java" />
+        <option value="$PROJECT_DIR$/src/items/Armor/Shield.java" />
         <option value="$PROJECT_DIR$/src/map/MapParser.java" />
         <option value="$PROJECT_DIR$/src/MapBuilderController.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -81,7 +822,7 @@
     <option name="width" value="2576" />
     <option name="height" value="1416" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -107,7 +848,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,17 +930,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Armor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapBuilder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="characters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Matthew/workspace/MapBuilder/src/map/MapParser.java" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_284a859b0e6deba86edc624fef1e4db2aa8241a9/cmd/git.exe" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -483,23 +1267,33 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12782541" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12782541" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -510,14 +1304,15 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -525,16 +1320,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17170">
-          <caret line="1026" column="25" selection-start-line="1026" selection-start-column="25" selection-end-line="1026" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -550,20 +1335,20 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapBuilder.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
           <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sprites/PlayerSprite.java">
@@ -573,23 +1358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/DisplayItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sprites/Exit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -635,46 +1404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Weapons/Axe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Consumables/Potion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Armor/Boots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Armor/ChestPiece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/items/Consumables/Consumable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -690,13 +1419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Weapons/WeaponType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/items/Weapons/Mace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -709,6 +1431,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#7054#7055#0" expanded="false" />
+            <element signature="e#7087#7088#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,7 +1464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,37 +1483,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/characters/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/characters/Neutral.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapContainer.java" />
-    <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="1021" column="27" selection-start-line="1021" selection-start-column="27" selection-end-line="1021" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Weapons/WeaponType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Consumables/PotionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Weapons/Axe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/Trigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/GatherTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/QuestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/InteractTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/KillTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/LocationTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/characters/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#2400#2401#0" expanded="false" />
+            <element signature="e#2435#2436#0" expanded="false" />
+            <element signature="e#2468#2469#0" expanded="false" />
+            <element signature="e#2492#2493#0" expanded="false" />
+            <element signature="e#2527#2528#0" expanded="false" />
+            <element signature="e#2552#2553#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Consumables/Potion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Rarity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sprites/DisplayItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Weapons/Dagger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/Armor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/ArmorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/Boots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/ChestPiece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/Gloves.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/Helmet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/Legs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Armor/Shield.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="422" column="118" selection-start-line="416" selection-start-column="28" selection-end-line="422" selection-end-column="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -796,11 +1706,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="245" column="22" selection-start-line="245" selection-start-column="22" selection-end-line="245" selection-end-column="22" />
+        <state relative-caret-position="493">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/characters/Neutral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

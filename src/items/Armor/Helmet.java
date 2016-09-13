@@ -12,7 +12,7 @@ public class Helmet  extends Armor {
 	
 	public Helmet(int atk, int magic, int def, int speedModifier, double weight, int hpBoost, int manaBoost, int value, Rarity howRare, ArmorType armorType) {
 		super(atk, magic, def, speedModifier, weight, hpBoost, manaBoost, value, howRare, armorType);
-		this.setImageLocation("Images\\Weapons\\" + this.getArmorType().toString() + "\\Helmet.png");
+		this.setImageLocation("Images\\Armors\\" + this.getArmorType().toString() + "\\Helmet.png");
 		this.setItemToolTipText(getHelmetToolTip());
 		this.setSimpleName(getSimpleHelmetName());
 	}

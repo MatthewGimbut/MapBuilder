@@ -12,7 +12,7 @@ public class Boots extends Armor {
 
 	public Boots(int atk, int magic, int def, int speedModifier, double weight, int hpBoost, int manaBoost, int value, Rarity howRare, ArmorType armorType) {
 		super(atk, magic, def, speedModifier, weight, hpBoost, manaBoost, value, howRare, armorType);
-		this.setImageLocation("Images\\Weapons\\" + this.getArmorType().toString() + "\\Axe.png");
+		this.setImageLocation("Images\\Armors\\" + this.getArmorType().toString() + "\\Boots.png");
 		this.setSimpleName(this.getArmorType() + " boots");
 		this.setItemToolTipText("A pair of " + this.getArmorType() + " boots");
 	}

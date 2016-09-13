@@ -12,7 +12,7 @@ public class ChestPiece extends Armor {
 
     public ChestPiece(int atk, int magic, int def, int speedModifier, double weight, int hpBoost, int manaBoost, int value, Rarity howRare, ArmorType armorType) {
         super(atk, magic, def, speedModifier, weight, hpBoost, manaBoost, value, howRare, armorType);
-        this.setImageLocation("Images\\Weapons\\" + this.getArmorType().toString() + "\\Chest.png");
+        this.setImageLocation("Images\\Armors\\" + this.getArmorType().toString() + "\\Chest.png");
         this.setSimpleName(this.getArmorType() + " armor");
         this.setItemToolTipText("A " + this.getArmorType() + " chest");
     }

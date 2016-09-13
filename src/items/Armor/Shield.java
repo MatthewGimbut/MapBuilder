@@ -12,7 +12,7 @@ public class Shield extends Armor {
 
 	public Shield(int atk, int magic, int def, int speedModifier, double weight, int hpBoost, int manaBoost, int value, Rarity howRare, ArmorType armorType) {
 		super(atk, magic, def, speedModifier, weight, hpBoost, manaBoost, value, howRare, armorType);
-		this.setImageLocation("Images\\Weapons\\" + this.getArmorType().toString() + "\\Axe.png");
+		this.setImageLocation("Images\\Armors\\" + this.getArmorType().toString() + "\\Shield.png");
 		this.setSimpleName(this.getArmorType() + " shield");
 		this.setItemToolTipText("A " + this.getArmorType() + " shield.");
 	}

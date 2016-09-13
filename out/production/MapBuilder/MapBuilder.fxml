@@ -53,13 +53,13 @@
         <Button fx:id="addToMap" mnemonicParsing="false" text="Add to map" />
         <Button fx:id="undo" mnemonicParsing="false" text="Undo" />
         <Button fx:id="redo" mnemonicParsing="false" text="Redo" />
-        <CheckBox fx:id="hostile" mnemonicParsing="false" text="Hostile" />
+        <CheckBox fx:id="hostile" disable="true" mnemonicParsing="false" text="Hostile" />
         <TextField fx:id="fileName" prefWidth="200.0" promptText="File name" />
         <Button fx:id="save" mnemonicParsing="false" text="Save" />
         <Button fx:id="clear" mnemonicParsing="false" text="Clear All" />
       </children>
     </HBox>
-    <ImageView fx:id="selectedSpriteImage" fitHeight="100.0" fitWidth="104.0" layoutX="31.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="selectedSpriteImage" fitHeight="75.0" fitWidth="75.0" layoutX="31.0" layoutY="604.0" pickOnBounds="true" preserveRatio="true" />
     <Label fx:id="filePath" layoutX="19.0" layoutY="487.0" text="" />
     <Button fx:id="treeBorder" layoutX="490.0" layoutY="149.0" mnemonicParsing="false" text="Add Tree Border">
       <tooltip>
@@ -79,7 +79,7 @@
         </FXCollections>
       </items>
     </ComboBox>
-    <FlowPane hgap="10.0" layoutX="18.0" layoutY="509.0" prefHeight="88.0" prefWidth="579.0" vgap="10.0">
+    <FlowPane hgap="10.0" layoutX="18.0" layoutY="506.0" minHeight="42.0" prefHeight="42.0" prefWidth="579.0" vgap="5.0">
       <children>
         <Label text="X:" />
         <TextField fx:id="x" prefWidth="200.0" promptText="X-Coordinate" />
