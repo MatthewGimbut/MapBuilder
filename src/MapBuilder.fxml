@@ -53,9 +53,9 @@
         <Button fx:id="addToMap" mnemonicParsing="false" text="Add to map" />
         <Button fx:id="undo" mnemonicParsing="false" text="Undo" />
         <Button fx:id="redo" mnemonicParsing="false" text="Redo" />
-        <CheckBox fx:id="hostile" disable="true" mnemonicParsing="false" text="Hostile" />
         <TextField fx:id="fileName" prefWidth="200.0" promptText="File name" />
         <Button fx:id="save" mnemonicParsing="false" text="Save" />
+        <Button fx:id="load" mnemonicParsing="false" text="Load" />
         <Button fx:id="clear" mnemonicParsing="false" text="Clear All" />
       </children>
     </HBox>
@@ -85,8 +85,11 @@
         <TextField fx:id="x" prefWidth="200.0" promptText="X-Coordinate" />
         <Label text="Y:" />
         <TextField fx:id="y" prefWidth="200.0" promptText="Y-Coordinate" />
+        <CheckBox fx:id="hostile" disable="true" mnemonicParsing="false" text="Hostile" visible="false" />
       </children>
     </FlowPane>
     <CheckBox fx:id="obstacle" disable="true" layoutX="532.0" layoutY="690.0" mnemonicParsing="false" text="isObstacle" visible="false" />
+    <Button fx:id="saveJSON" layoutX="492.0" layoutY="658.0" mnemonicParsing="false" prefWidth="108.0" text="Write JSON" />
+    <Button id="saveJSON" fx:id="loadJSON" layoutX="492.0" layoutY="685.0" mnemonicParsing="false" prefWidth="108.0" text="Read JSON" />
   </children>
 </AnchorPane>

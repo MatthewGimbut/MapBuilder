@@ -13,7 +13,7 @@ public class Main extends Application {
 
         Scene scene = new Scene(new MapBuilderController(primaryStage), 1700, 760);
 
-        Image icon = new Image("file:Sprites\\Generic Obstacles\\Tree.png");
+        Image icon = new Image("file:Images\\Nature\\Tree.png");
         primaryStage.getIcons().add(icon);
 
         primaryStage.setTitle("Map Builder");

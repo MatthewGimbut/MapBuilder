@@ -1,5 +1,0 @@
-nonhostile
-background|grass
-neutral|100|100|fdsa|Images\Characters\GenericNeutral\GenericNeutralNorth.png|Images\Characters\GenericNeutral\GenericNeutralSouth.png|Images\Characters\GenericNeutral\GenericNeutralEast.png|Images\Characters\GenericNeutral\GenericNeutralWest.png|3
-neutral|200|100|ds|Images\Characters\GenericNeutral\GenericNeutralNorth.png|Images\Characters\GenericNeutral\GenericNeutralSouth.png|Images\Characters\GenericNeutral\GenericNeutralEast.png|Images\Characters\GenericNeutral\GenericNeutralWest.png|22
-customObst|300|100|file:C:\Users\Matthew\workspace\MapBuilder\Images\Nature\Tree1x3.png

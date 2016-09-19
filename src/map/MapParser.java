@@ -31,7 +31,7 @@ public class MapParser {
 	private  final int MAX_NPC_MESSAGE_SIZE = 20;
 	private  final int NUM_GENERIC_DIALOGUE = 4;
     private  final String DELIMITER_STRING = "|";
-	private String background = "neonTest";
+	private String background = "";
 	private boolean hostile = false;
 	private ArrayList<Sprite> mapItems;
 
@@ -189,6 +189,9 @@ public class MapParser {
 					ArrayList<Sprite> struct = parseStructure(info[1], parseInt(info[2]), parseInt(info[3]));
                     objects.addAll(struct);
 					break;
+
+					case "":
+						break;
 
 				default:
 					System.out.println("Non-sprite tag " + info[0] + " at line " + lineCounter + ".");
@@ -372,7 +375,7 @@ public class MapParser {
 					break;
 			}
 
-			for (Sprite sprite : mapItems) {
+			for (Sprite sprite : this.mapItems) {
 				switch (sprite.getClass().getSimpleName()) {
 					case "Exit":
 						Exit exit = (Exit) sprite;
@@ -1047,4 +1050,6 @@ public class MapParser {
 	public ArrayList<Sprite> getMapItems() {
 		return this.mapItems;
 	}
+
+	public void setMapItems(ArrayList<Sprite> mapItems) { this.mapItems = mapItems; }
 }

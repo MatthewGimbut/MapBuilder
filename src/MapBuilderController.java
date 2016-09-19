@@ -1,4 +1,8 @@
+import characters.Character;
+import characters.Enemy;
 import characters.Neutral;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import items.Armor.*;
 import items.Consumables.Potion;
 import items.Consumables.PotionType;
@@ -19,12 +23,12 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import map.InterfaceAdapter;
+import map.MapJSONTemplate;
 import map.MapParser;
 import sprites.*;
 
-import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.*;
 
@@ -36,17 +40,18 @@ public class MapBuilderController extends BorderPane {
     private GraphicsContext gc;
     private ObservableList<String> categories;
     private MapParser mapParser;
-    private final String GENERIC_DIRECTORY = "Images\\Nature";
-    private final String LOOTABLE_DIRECTORY = "Images\\Lootables";
-    private final String ENEMY_DIRECTORY = "Images\\Enemies";
-    private final String NEUTRAL_DIRECTORY = "Images\\Characters";
-    private final String MISC_DIRECTORY = "Images\\Miscellaneous";
-    private final String STRUCTURE_DIRECTORY = "Images\\Structures";
-    private final String ITEM_DIRECTORY = "Images\\Items";
-    private final String LOWER_DIRECTORY = "Images\\Lower";
-    private final String UPPER_DIRECTORY = "Images\\Upper";
+    private final String GENERIC_DIRECTORY = "Images\\Objects\\Nature";
+    private final String LOOTABLE_DIRECTORY = "Images\\Objects\\Lootables";
+    private final String ENEMY_DIRECTORY = "Images\\Objects\\Enemies";
+    private final String NEUTRAL_DIRECTORY = "Images\\Objects\\Characters";
+    private final String MISC_DIRECTORY = "Images\\Objects\\Miscellaneous";
+    private final String STRUCTURE_DIRECTORY = "Images\\Objects\\Structures";
+    private final String ITEM_DIRECTORY = "Images\\Objects\\Items";
+    private final String LOWER_DIRECTORY = "Images\\Objects\\Lower";
+    private final String UPPER_DIRECTORY = "Images\\Objects\\Upper";
 
     private Stack<Sprite> removedItems;
+
 
     @FXML private ResourceBundle resources;
     @FXML private URL location;
@@ -62,6 +67,7 @@ public class MapBuilderController extends BorderPane {
     @FXML private AnchorPane mapView;
     @FXML private CheckBox obstacle;
     @FXML private Button save;
+    @FXML private Button load;
     @FXML private ImageView selectedSpriteImage;
     @FXML private ImageView testBackground;
     @FXML private Button treeBorder;
@@ -70,6 +76,8 @@ public class MapBuilderController extends BorderPane {
     @FXML private Label filePath;
     @FXML private Button undo;
     @FXML private Button redo;
+    @FXML private Button saveJSON;
+    @FXML private Button loadJSON;
 
 
     public MapBuilderController(Stage primaryStage) {
@@ -168,6 +176,23 @@ public class MapBuilderController extends BorderPane {
             }
         });
 
+        load.setOnAction(event -> {
+            String name = fileName.getText();
+            if(name.length() > 0) {
+                if(!name.endsWith(".map")) {
+                    name += ".map";
+                }
+                try {
+                    mapParser.setMapItems(mapParser.parseMap(name));
+                    drawMap();
+                    drawBackground(mapParser.getBackground());
+                } catch(IOException e) {
+                    System.out.println("Error reading file.");
+                    System.out.println(e.getMessage());
+                }
+            }
+        });
+
         treeBorder.setOnAction(event -> {
             mapParser.placeTreeBorder();
             drawMap();
@@ -187,7 +212,7 @@ public class MapBuilderController extends BorderPane {
                     generateLootable(filePath.getText());
                     break;
                 case "Enemies":
-
+                    generateEnemy(filePath.getText());
                     break;
                 case "Neutral NPCs":
                     generateNeutral(filePath.getText());
@@ -263,15 +288,117 @@ public class MapBuilderController extends BorderPane {
             }
         });
 
+        saveJSON.setOnAction(event -> {
+            String file = getFileLocation();
+            MapJSONTemplate m = new MapJSONTemplate(mapParser.getMapItems(), mapParser.getBackground(), file);
+
+            PrintWriter writer = null;
+            try {
+                writer = new PrintWriter(file);
+                writer.print("");
+                writer.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+
+            try(BufferedWriter br = new BufferedWriter(new FileWriter(file))) {
+                GsonBuilder gsonBuilder = new GsonBuilder();
+                gsonBuilder.registerTypeAdapter(Item.class, new InterfaceAdapter<Item>());
+                gsonBuilder.registerTypeAdapter(Character.class, new InterfaceAdapter<Character>());
+                gsonBuilder.setPrettyPrinting();
+                Gson gson = gsonBuilder.create();
+                String json = gson.toJson(m);
+                br.write(json);
+            } catch (IOException e) {
+                System.out.println("Error writing JSON!");
+                System.out.println(e.getMessage());
+            }
+        });
+
+        loadJSON.setOnAction(event -> {
+            String file = getFileLocation();
+            try {
+                String json = new Scanner(new File(file)).useDelimiter("\\Z").next(); //"\\Z" Delimiter is the end of file character, loading the entire file into the String with one call to next().
+
+                GsonBuilder gson = new GsonBuilder()
+                                .setPrettyPrinting()
+                                .setLenient()
+                                .disableHtmlEscaping()
+                                .registerTypeAdapter(Item.class, new InterfaceAdapter<Item>())
+                                .registerTypeAdapter(Character.class, new InterfaceAdapter<Class>());
+
+                MapJSONTemplate m = gson.create().fromJson(json, MapJSONTemplate.class);
+
+                drawBackground(m.getId());
+
+                mapParser.setBackground(m.getId());
+
+                m.getMapItems().forEach(sprite -> {
+                    if(sprite.getImageLocation().contains("\\\\")) sprite.setImage(sprite.getImageLocation().replace("\\\\", "\\"));
+                    if(sprite.getImageLocation().contains("C:\\Users\\Matthew\\workspace\\MapBuilder\\")) sprite.setImage(sprite.getImageLocation().replace("C:\\Users\\Matthew\\workspace\\MapBuilder\\", ""));
+                    sprite.setImage(sprite.getImageLocation());
+                });
+                mapParser.setMapItems(m.getMapItems());
+                drawMap();
+            } catch (IOException e) {
+                System.out.println("Error loading JSON!");
+                System.out.println(e.getMessage());
+            }
+        });
+
         this.setCenter(anchor);
     }
 
-    private void generateNeutral(String imageLoc) {
+    private String getFileLocation() {
+        return fileName.getText() + (fileName.getText().endsWith(".json") ? "" : ".json" );
+    }
+
+    private void drawBackground(String backgroundId) {
+        switch(backgroundId) {
+            case "grass":
+                mapView.setStyle("-fx-background-image: url('GrassBackground.png'); " + BACKGROUND_STRING);
+                break;
+            case "interior-black":
+                mapView.setStyle("-fx-background-image: url('BlackBackground.png'); " + BACKGROUND_STRING);
+                break;
+            case "neonTest":
+                mapView.setStyle("-fx-background-image: url('TestBack.png'); " + BACKGROUND_STRING);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void generateEnemy(String imageLoc) {
         boolean success = false;
         String name = "Default name";
         TextInputDialog nameInput = new TextInputDialog();
         nameInput.setTitle("NPC creation");
-        nameInput.setContentText("What is the name of the neutral NPC?");
+        nameInput.setContentText("What is the name of the enemy?");
+
+        Optional<String> result1 = nameInput.showAndWait();
+        if (result1.isPresent()){
+            name = result1.get();
+        }
+
+
+
+        Enemy enemy = new Enemy(name, getLvl(), getCurrentHP(), getMaxHP(), getCurrentMana(), getMaxMana(), getAttack(), getMagic(), getDefense(),
+                getSpeed(), imageLoc, imageLoc, imageLoc, imageLoc);
+        NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), enemy, getDialogueArray());
+        System.out.println(npc.getImageLocation());
+
+        if(!mapParser.addItem(npc)) {
+            displayIntersectionError();
+        }
+    }
+
+    private void generateNeutral(String imageLoc) { //For now, the image location is not used because the neutral npc is created like a random one. Random image and direction are assigned until further notice.
+        boolean success = false;
+        String name = "Default name";
+        TextInputDialog nameInput = new TextInputDialog();
+        nameInput.setTitle("NPC creation");
+        nameInput.setContentText("What is the name of the NPC?");
 
         Optional<String> result1 = nameInput.showAndWait();
         if (result1.isPresent()){
@@ -280,12 +407,21 @@ public class MapBuilderController extends BorderPane {
 
         Neutral neut = new Neutral(name);
 
-        success = false;
+        NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), neut, getDialogueArray());
+        System.out.println(npc.getImageLocation());
+
+        if(!mapParser.addItem(npc)) {
+            displayIntersectionError();
+        }
+    }
+
+    private String[] getDialogueArray() {
+        boolean success = false;
         int numDialog = 0;
         while (!success) {
             TextInputDialog dialog = new TextInputDialog();
             dialog.setTitle("Dialog creation");
-            dialog.setContentText("How many line of dialog would you like to create? Max length ~65 characters per line.");
+            dialog.setContentText("How many lines of dialog would you like to create? Max length ~65 characters per line.");
             Optional<String> result2 = dialog.showAndWait();
             if (result2.isPresent()){
                 try {
@@ -311,11 +447,7 @@ public class MapBuilderController extends BorderPane {
             }
         }
 
-        NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), neut, dialogArray);
-
-        if(!mapParser.addItem(npc)) {
-            displayIntersectionError();
-        }
+        return dialogArray;
     }
 
     private void generateLootable(String imageLoc) {
@@ -718,6 +850,121 @@ public class MapBuilderController extends BorderPane {
         }
 
         return r;
+    }
+
+    private int getLvl() {
+        int lvl = 0;
+        boolean successfulItemNum = false;
+        while (!successfulItemNum) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle("Level");
+            dialog.setContentText("What is the level of the NPC?");
+
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                try {
+                    lvl = Integer.parseInt(result.get());
+                    successfulItemNum = true;
+                } catch(NumberFormatException e) {
+                    successfulItemNum = false;
+                    System.out.println("invalid");
+                }
+            }
+        }
+
+        return lvl;
+    }
+
+    private int getCurrentHP() {
+        int hp = 0;
+        boolean successfulItemNum = false;
+        while (!successfulItemNum) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle("Current HP");
+            dialog.setContentText("What is the current HP value of the NPC?");
+
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                try {
+                    hp = Integer.parseInt(result.get());
+                    successfulItemNum = true;
+                } catch(NumberFormatException e) {
+                    successfulItemNum = false;
+                    System.out.println("invalid");
+                }
+            }
+        }
+
+        return hp;
+    }
+
+    private int getMaxHP() {
+        int hp = 0;
+        boolean successfulItemNum = false;
+        while (!successfulItemNum) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle("Max HP");
+            dialog.setContentText("What is the max HP value of the NPC?");
+
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                try {
+                    hp = Integer.parseInt(result.get());
+                    successfulItemNum = true;
+                } catch(NumberFormatException e) {
+                    successfulItemNum = false;
+                    System.out.println("invalid");
+                }
+            }
+        }
+
+        return hp;
+    }
+
+    private int getCurrentMana() {
+        int mana = 0;
+        boolean successfulItemNum = false;
+        while (!successfulItemNum) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle("Current mana");
+            dialog.setContentText("What is the current mana value of the NPC?");
+
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                try {
+                    mana = Integer.parseInt(result.get());
+                    successfulItemNum = true;
+                } catch(NumberFormatException e) {
+                    successfulItemNum = false;
+                    System.out.println("invalid");
+                }
+            }
+        }
+
+        return mana;
+    }
+
+    private int getMaxMana() {
+        int mana = 0;
+        boolean successfulItemNum = false;
+        while (!successfulItemNum) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle("Max mana");
+            dialog.setContentText("What is the max mana value of the NPC?");
+
+            Optional<String> result = dialog.showAndWait();
+            if (result.isPresent()){
+                try {
+                    mana = Integer.parseInt(result.get());
+                    successfulItemNum = true;
+                } catch(NumberFormatException e) {
+                    successfulItemNum = false;
+                    System.out.println("invalid");
+                }
+            }
+        }
+
+        return mana;
     }
 
     private int getAttack() {
