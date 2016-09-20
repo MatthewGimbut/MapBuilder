@@ -657,8 +657,12 @@
       },
       "questActivationTriggers": [],
       "questTriggers": [
-        {},
-        {}
+        {
+          "trigger": "quest001_01"
+        },
+        {
+          "trigger": "quest002_01"
+        }
       ],
       "x": 464,
       "y": 240,

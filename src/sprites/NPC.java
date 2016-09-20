@@ -10,15 +10,15 @@ import java.util.LinkedList;
 public class NPC extends Sprite {
 
 	private characters.Character chara;
-	private List<Trigger> questActivationTriggers;
-	private List<Trigger> questTriggers;
+	private LinkedList<Trigger> questActivationTriggers;
+	private LinkedList<Trigger> questTriggers;
 	private Trigger lastActivatedTrigger = null;
 
 	public NPC(int x, int y, characters.Character chara, String[] message) {
 		super(x, y);
 		this.chara = chara;
 		this.message = message;
-		questActivationTriggers = new LinkedList<>();
+		this.questActivationTriggers = new LinkedList<>();
 		this.questTriggers = new LinkedList<>();
 		initNPC();
 	}
@@ -27,7 +27,7 @@ public class NPC extends Sprite {
 	 * Constructor which includes Activation Triggers (this NPC will be used to activate quests)
 	 */
 	public NPC(int x, int y, characters.Character chara,
-			   String[] message, List<Trigger> questActivationTriggers, List<Trigger> questTriggers) {
+			   String[] message, LinkedList<Trigger> questActivationTriggers, LinkedList<Trigger> questTriggers) {
 		this(x, y, chara, message);
 		this.questActivationTriggers = questActivationTriggers;
 		this.questTriggers = questTriggers;

@@ -10,4 +10,15 @@ package quests.trigger;
  */
 public class Trigger {
 
+    private String trigger;
+
+    public Trigger() { }
+
+    public String getTrigger() {
+        return trigger;
+    }
+
+    public void setTrigger(String trigger) {
+        this.trigger = trigger;
+    }
 }

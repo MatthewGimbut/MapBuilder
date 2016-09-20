@@ -153,14 +153,16 @@ public class MapParser {
 						neutralMessageCounter++;
 					}
 
-					List<Trigger> activationTriggers = new ArrayList<Trigger>();
+					LinkedList<Trigger> activationTriggers = new LinkedList<Trigger>();
 					if(info[j].equals("activationtriggers")) {
 						j++; //go to next index (not activationtriggers)
 						while(j < info.length && !info[j].equals("questtriggers")) {
 							MasterQuests m = MasterQuests.valueOf(info[j]);
 							if(m != null) { //I sure hope this works
 								//add the activation trigger to the list
-								activationTriggers.add(m.getQuest().getQuestAcceptanceTrigger());
+								Trigger t = m.getQuest().getQuestAcceptanceTrigger();
+								t.setTrigger(info[j]);
+								activationTriggers.add(t);
 								System.out.println("Parse Activation Trigger Success *Map Parser*"); //TODO delete this
 							} else {
 								System.out.println("Parse failed *Map Parser*");
@@ -169,7 +171,9 @@ public class MapParser {
 						}
 					}
 
-					List<Trigger> questTriggers = new ArrayList<Trigger>();
+					activationTriggers.forEach(System.out::println);
+
+					LinkedList<Trigger> questTriggers = new LinkedList<Trigger>();
 					if(info[j].equals("questtriggers")) {
 						j++; //go to next index (not questtriggers)
 						while(j < info.length) {
@@ -183,7 +187,9 @@ public class MapParser {
 							int taskNum = Integer.parseInt(data[1], 10);
 							taskNum--; //tasks are listed numerically beginning with 1
 							if(m != null) { //also hope this works
-								questTriggers.add(m.getQuest().getAllTasks().get(taskNum).getTrigger());
+								Trigger t = m.getQuest().getAllTasks().get(taskNum).getTrigger();
+								t.setTrigger(info[j]);
+								questTriggers.add(t);
 								System.out.println("Parse Quest Trigger Success *Map Parser*"); //TODO delete this
 							} else {
 								System.out.println("Parse failed *Map Parser*");
@@ -191,6 +197,9 @@ public class MapParser {
 							j++;
 						}
 					}
+
+					questTriggers.forEach(System.out::println);
+
 
 
 					objects.add(new NPC(parseInt(info[1]), parseInt(info[2]),
