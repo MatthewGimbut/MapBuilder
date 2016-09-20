@@ -1,9 +1,10 @@
-package quests;
+package quests.task;
 
 import items.Item;
+import quests.trigger.Trigger;
 
 /**
- * quests.GatherTask is a subclass of quests.Task and is a Task based on collecting a certain
+ * quests.quests.task.Task.GatherTask is a subclass of quests.task.Task and is a Task based on collecting a certain
  * number of a specified Item.
  * @author Sean Zimmerman
  */

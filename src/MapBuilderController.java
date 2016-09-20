@@ -302,10 +302,11 @@ public class MapBuilderController extends BorderPane {
             }
 
             try(BufferedWriter br = new BufferedWriter(new FileWriter(file))) {
-                GsonBuilder gsonBuilder = new GsonBuilder();
-                gsonBuilder.registerTypeAdapter(Item.class, new InterfaceAdapter<Item>());
-                gsonBuilder.registerTypeAdapter(Character.class, new InterfaceAdapter<Character>());
-                gsonBuilder.setPrettyPrinting();
+                GsonBuilder gsonBuilder = new GsonBuilder()
+                .registerTypeAdapter(Item.class, new InterfaceAdapter<Item>())
+                .registerTypeAdapter(Character.class, new InterfaceAdapter<Character>())
+                .setPrettyPrinting();
+
                 Gson gson = gsonBuilder.create();
                 String json = gson.toJson(m);
                 br.write(json);
@@ -325,7 +326,7 @@ public class MapBuilderController extends BorderPane {
                                 .setLenient()
                                 .disableHtmlEscaping()
                                 .registerTypeAdapter(Item.class, new InterfaceAdapter<Item>())
-                                .registerTypeAdapter(Character.class, new InterfaceAdapter<Class>());
+                                .registerTypeAdapter(Character.class, new InterfaceAdapter<Character>());
 
                 MapJSONTemplate m = gson.create().fromJson(json, MapJSONTemplate.class);
 
@@ -335,8 +336,7 @@ public class MapBuilderController extends BorderPane {
 
                 m.getMapItems().forEach(sprite -> {
                     if(sprite.getImageLocation().contains("\\\\")) sprite.setImage(sprite.getImageLocation().replace("\\\\", "\\"));
-                    if(sprite.getImageLocation().contains("C:\\Users\\Matthew\\workspace\\MapBuilder\\")) sprite.setImage(sprite.getImageLocation().replace("C:\\Users\\Matthew\\workspace\\MapBuilder\\", ""));
-                    sprite.setImage(sprite.getImageLocation());
+                    sprite.setImage(sprite.getImageLocation().replace("C:\\Users\\Matthew\\workspace\\MapBuilder\\", ""));
                 });
                 mapParser.setMapItems(m.getMapItems());
                 drawMap();

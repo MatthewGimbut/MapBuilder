@@ -1,7 +1,7 @@
 package sprites;
 
 import quests.QuestHandler;
-import quests.Trigger;
+import quests.trigger.Trigger;
 
 import java.util.Iterator;
 import java.util.List;

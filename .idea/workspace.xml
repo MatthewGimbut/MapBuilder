@@ -2,134 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a86e37da-31fb-45b3-b482-cf2407e3ef48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gson-2.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/map/InterfaceAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/map/MapJSONTemplate.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Characters/Neutral0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/bronze/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/bronze/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/bronze/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/bronze/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/bronze/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/bronze/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/cloth/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/cloth/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/cloth/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/cloth/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/cloth/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/cloth/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/iron/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/iron/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/iron/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/iron/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/iron/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/iron/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/leather/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/leather/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/leather/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/leather/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/leather/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/leather/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Down/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Down/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Down/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Down/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Down/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Down/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Left/Cloth Left Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Left/Cloth Left Cuirass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Left/Cloth Left Gauntlets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Left/Cloth Left Greaves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Left/Cloth Left Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Right/Cloth Right Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Right/Cloth Right Cuirass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Right/Cloth Right Gauntlets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Right/Cloth Right Greaves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Right/Cloth Right Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Up/Cloth Up Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Up/Cloth Up Cuirass.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Up/Cloth Up Gauntlets.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Up/Cloth Up Greaves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/misc/Up/Cloth Up Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/steel/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/steel/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/steel/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/steel/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/steel/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/steel/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/wood/Boots.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/wood/Chest.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/wood/Gloves.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/wood/Helmet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/wood/Legs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Armors/wood/Shield.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Consumables/Potions/Agility Potion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Consumables/Potions/Attack Potion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Consumables/Potions/Defense Potion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Consumables/Potions/Health Potion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Consumables/Potions/Mana Potion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/Cleaver/Cleaver.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/RustyKnife/RustyKnife.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/Spells/FireSpellBook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/bronze/axe/Axe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/bronze/dagger/Dagger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/bronze/mace/Mace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/bronze/spear/Spear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/bronze/sword/Sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/iron/axe/Axe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/iron/dagger/Dagger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/iron/mace/Mace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/iron/spear/Spear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/iron/sword/Sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/steel/axe/Axe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/steel/dagger/Dagger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/steel/mace/Mace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/steel/spear/Spear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/steel/sword/Sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/stone/axe/Axe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/stone/dagger/Dagger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/stone/mace/Mace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/stone/spear/Spear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/stone/sword/Sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/testSword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/wood/axe/Axe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/wood/dagger/Dagger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/wood/mace/Mace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/wood/spear/Spear.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Items/Weapons/wood/sword/Sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Lower/DarkDoorwayTall.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Lower/WoodFloor256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Lower/WoodFloor256x128.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Lower/WoodFloor256x256.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Lower/WoodFloor32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Miscellaneous/ExitVisible.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Miscellaneous/NotBlank40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Miscellaneous/SaveArea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Nature/TorchAnimated.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Structures/WoodRoofLeft32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Structures/WoodRoofRight32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Structures/WoodWall32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Upper/WoodRoofLeft32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Upper/WoodRoofRight32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Upper/WoodWall32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Potion Test.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestMap.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TreeTest.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilderController.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilderController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllOtherQuestAcceptanceTriggers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllOtherQuests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllOtherTasks.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllOtherTriggers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllStoryQuests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllStoryTasks.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/quests/master/MasterQuests.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/GatherTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/InteractTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/KillTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/LocationTrigger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/Task.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/Trigger.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/quests/GatherTask.java" afterPath="$PROJECT_DIR$/src/quests/task/GatherTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/quests/InteractTask.java" afterPath="$PROJECT_DIR$/src/quests/task/InteractTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/quests/KillTask.java" afterPath="$PROJECT_DIR$/src/quests/task/KillTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/quests/LocationTrigger.java" afterPath="$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/quests/Task.java" afterPath="$PROJECT_DIR$/src/quests/task/Task.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/quests/Trigger.java" afterPath="$PROJECT_DIR$/src/quests/trigger/Trigger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/Main.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser$1.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/Quest.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/Quest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/QuestHandler.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/QuestHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/sprites/NPC.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/sprites/NPC.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MapBuilder.iml" afterPath="$PROJECT_DIR$/MapBuilder.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilder.fxml" afterPath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilder.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Map0-0.json" afterPath="$PROJECT_DIR$/Map0-0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestHouseLarge.json" afterPath="$PROJECT_DIR$/TestHouseLarge.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapBuilder.fxml" afterPath="$PROJECT_DIR$/src/MapBuilder.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapBuilderController.java" afterPath="$PROJECT_DIR$/src/MapBuilderController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map/MapParser.java" afterPath="$PROJECT_DIR$/src/map/MapParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quests/Quest.java" afterPath="$PROJECT_DIR$/src/quests/Quest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quests/QuestHandler.java" afterPath="$PROJECT_DIR$/src/quests/QuestHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sprites/NPC.java" afterPath="$PROJECT_DIR$/src/sprites/NPC.java" />
     </list>
     <ignored path="MapBuilder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -151,55 +59,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="359" column="22" selection-start-line="359" selection-start-column="22" selection-end-line="359" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sprite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sprites/Sprite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="238">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/map/InterfaceAdapter.java">
+      <file leaf-file-name="KillTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/quests/task/KillTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/items/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Save.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sprites/Save.java">
+      <file leaf-file-name="GatherTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/quests/task/GatherTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="650" column="68" selection-start-line="650" selection-start-column="68" selection-end-line="650" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6847#6856#0" expanded="true" />
+                <marker date="1474345290097" expanded="false" signature="6184:6193" ph="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -208,14 +116,23 @@
       <file leaf-file-name="MapJSONTemplate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="446">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MasterQuests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/quests/master/MasterQuests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2746#2747#0" expanded="true" />
-                <element signature="e#2789#2790#0" expanded="true" />
-                <element signature="e#2818#2819#0" expanded="true" />
-                <element signature="e#2843#2844#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,23 +142,7 @@
         <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1765#1766#0" expanded="false" />
-                <element signature="e#1784#1785#0" expanded="false" />
-                <element signature="e#1833#1834#0" expanded="false" />
-                <element signature="e#1858#1859#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -249,12 +150,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Neutral.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/characters/Neutral.java">
+      <file leaf-file-name="QuestHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/quests/QuestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="235">
+              <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -282,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/MapBuilder.fxml" />
         <option value="$PROJECT_DIR$/src/items/Weapons/Mace.java" />
         <option value="$PROJECT_DIR$/src/characters/Player.java" />
-        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
         <option value="$PROJECT_DIR$/src/quests/LocationTrigger.java" />
         <option value="$PROJECT_DIR$/src/items/Consumables/Potion.java" />
         <option value="$PROJECT_DIR$/src/characters/Neutral.java" />
@@ -297,6 +199,9 @@
         <option value="$PROJECT_DIR$/src/sprites/Sprite.java" />
         <option value="$PROJECT_DIR$/src/characters/Enemy.java" />
         <option value="$PROJECT_DIR$/src/map/InterfaceAdapter.java" />
+        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
+        <option value="$PROJECT_DIR$/src/quests/QuestHandler.java" />
+        <option value="$PROJECT_DIR$/src/quests/master/MasterQuests.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/map/MapJSONTemplate.java" />
         <option value="$PROJECT_DIR$/src/MapBuilderController.java" />
@@ -335,6 +240,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -464,8 +371,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -751,6 +656,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a86e37da-31fb-45b3-b482-cf2407e3ef48" name="Default" comment="" />
@@ -782,7 +690,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12704599" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12704599" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -826,6 +734,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998441" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -840,79 +756,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sprites/Exit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/UpperLayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/Lootable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/Cardinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Weapons/Cleaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Consumables/Consumable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Weapons/Spear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Weapons/Mace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/characters/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/characters/EnemyTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/attacks/Other/StatChange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -971,13 +814,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quests/GatherTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quests/QuestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1045,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,20 +941,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapContainer.java" />
-    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1765#1766#0" expanded="false" />
-            <element signature="e#1784#1785#0" expanded="false" />
-            <element signature="e#1833#1834#0" expanded="false" />
-            <element signature="e#1858#1859#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/characters/Neutral.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1177,55 +997,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/map/InterfaceAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/task/InteractTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllOtherTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllOtherQuestAcceptanceTriggers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/QuestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/task/KillTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="204">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/MasterQuests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/task/GatherTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2746#2747#0" expanded="true" />
-            <element signature="e#2789#2790#0" expanded="true" />
-            <element signature="e#2818#2819#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="446">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/map/InterfaceAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        <state relative-caret-position="498">
+          <caret line="650" column="68" selection-start-line="650" selection-start-column="68" selection-end-line="650" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6847#6856#0" expanded="true" />
+            <marker date="1474345290097" expanded="false" signature="6184:6193" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="359" column="22" selection-start-line="359" selection-start-column="22" selection-end-line="359" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

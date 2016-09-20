@@ -1,9 +1,9 @@
-package quests;
+package quests.trigger;
 
 import sprites.Sprite;
 
 /**
- * quests.LocationTrigger is a subclass of quests.Trigger, it represents an invisible trigger which
+ * quests.trigger.LocationTrigger is a subclass of quests.trigger.Trigger, it represents an invisible trigger which
  * would be on a map and ran over by a player. Contains a sprites.Sprite object.
  * @author Sean Zimmerman
  */

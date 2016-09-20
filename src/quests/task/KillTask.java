@@ -1,9 +1,9 @@
-package quests;
+package quests.task;
 
 import characters.EnemyTypes;
 
 /**
- * quests.KillTask is a subclass of quests.Task and is a Task based on killing a certain
+ * quests.task.KillTask is a subclass of quests.task.Task and is a Task based on killing a certain
  * type of enemy a designated number of times.
  * @author Sean Zimmerman
  */

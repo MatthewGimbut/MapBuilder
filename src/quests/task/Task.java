@@ -1,9 +1,11 @@
-package quests;
+package quests.task;
+
+import quests.trigger.Trigger;
 
 /**
- * quests.Task represents an individual Task apart of a Quest.
- * Abstract class with children quests.KillTask, quests.GatherTask, quests.ExploreTask,
- * quests.InteractTask.
+ * quests.task.Task represents an individual Task apart of a Quest.
+ * Abstract class with children quests.task.KillTask, quests.quests.task.Task.GatherTask, quests.ExploreTask,
+ * quests.quests.task.Task.InteractTask.
  * @author Sean Zimmerman
  */
 public abstract class Task {

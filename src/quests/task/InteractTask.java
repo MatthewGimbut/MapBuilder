@@ -1,7 +1,9 @@
-package quests;
+package quests.task;
+
+import quests.trigger.Trigger;
 
 /**
- * quests.InteractTask is a subclass of quests.Task and is a Task based on interacting with an NPC
+ * quests.quests.task.Task.InteractTask is a subclass of quests.task.Task and is a Task based on interacting with an NPC
  * who shares the same Trigger. An Interact Task is always "complete" since its only requirement
  * is interacting with an NPC who holds the same trigger. (And it will only check completion if
  * the NPC you are interacting with has the same trigger).

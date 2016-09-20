@@ -9,11 +9,14 @@ import items.Item;
 import items.Rarity;
 import items.Weapons.*;
 import javafx.geometry.Rectangle2D;
+import quests.master.MasterQuests;
+import quests.trigger.Trigger;
 import sprites.*;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
 import static java.lang.Integer.parseInt;
@@ -143,13 +146,56 @@ public class MapParser {
 					String[] neutralMessage = new String[MAX_NPC_MESSAGE_SIZE];
 					int j = 8;
 					int neutralMessageCounter = 0;
-					while(j < info.length) { //Copies all array locations that contain dialogue into a new array to send to the NPC
+					while(j < info.length && !info[j].equals("activationtriggers") &&
+							!info[j].equals("questtriggers")) { //Copies all array locations that contain dialogue into a new array to send to the NPC
 						neutralMessage[neutralMessageCounter] = info[j];
 						j++;
 						neutralMessageCounter++;
 					}
+
+					List<Trigger> activationTriggers = new ArrayList<Trigger>();
+					if(info[j].equals("activationtriggers")) {
+						j++; //go to next index (not activationtriggers)
+						while(j < info.length && !info[j].equals("questtriggers")) {
+							MasterQuests m = MasterQuests.valueOf(info[j]);
+							if(m != null) { //I sure hope this works
+								//add the activation trigger to the list
+								activationTriggers.add(m.getQuest().getQuestAcceptanceTrigger());
+								System.out.println("Parse Activation Trigger Success *Map Parser*"); //TODO delete this
+							} else {
+								System.out.println("Parse failed *Map Parser*");
+							}
+							j++;
+						}
+					}
+
+					List<Trigger> questTriggers = new ArrayList<Trigger>();
+					if(info[j].equals("questtriggers")) {
+						j++; //go to next index (not questtriggers)
+						while(j < info.length) {
+							String[] data = info[j].split("_");
+							//data[0] holds the quest number, data[1] holds the task number
+							MasterQuests m = MasterQuests.valueOf(data[0]);
+							/*
+							forces the int into base 10 since Integer.parseInt parses strings that
+							lead with 0 as octal
+							*/
+							int taskNum = Integer.parseInt(data[1], 10);
+							taskNum--; //tasks are listed numerically beginning with 1
+							if(m != null) { //also hope this works
+								questTriggers.add(m.getQuest().getAllTasks().get(taskNum).getTrigger());
+								System.out.println("Parse Quest Trigger Success *Map Parser*"); //TODO delete this
+							} else {
+								System.out.println("Parse failed *Map Parser*");
+							}
+							j++;
+						}
+					}
+
+
 					objects.add(new NPC(parseInt(info[1]), parseInt(info[2]),
-							new Neutral(info[3], info[4], info[5], info[6], info[7]), neutralMessage));
+							new Neutral(info[3], info[4], info[5], info[6], info[7]), neutralMessage,
+							activationTriggers, questTriggers));
 					break;
 
 				case "item":
@@ -600,13 +646,13 @@ public class MapParser {
      * @return True or false depending on whether or not there are collisions.
      */
     private  boolean intersectsObstacle(ArrayList<Sprite> mapItems, Sprite testSprite) {
-        //Rectangle2D playerBounds = player.getBounds();
-        for(Sprite sprite : mapItems) {
-            if(testSprite.getBounds().intersects(sprite.getBounds()) && !(testSprite instanceof  LowerLayer)) {// || testSprite.getBounds().intersects(playerBounds)) {
-                return true;
-            }
-        }
-        return false;
+		//Rectangle2D playerBounds = player.getBounds();
+		for(Sprite sprite : mapItems) {
+			if(testSprite.getBounds().intersects(sprite.getBounds())) {
+				return !(testSprite instanceof LowerLayer);
+			}
+		}
+		return false;
     }
 
 	/**

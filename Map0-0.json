@@ -7,8 +7,8 @@
       "y": 50,
       "dx": 0,
       "dy": 0,
-      "width": 0,
-      "height": 0,
+      "width": 10,
+      "height": 36,
       "visible": true,
       "isObstacle": true,
       "location": "file:Images\\\\TorchTest.gif"
@@ -18,8 +18,8 @@
       "y": 50,
       "dx": 0,
       "dy": 0,
-      "width": 0,
-      "height": 0,
+      "width": 10,
+      "height": 36,
       "visible": true,
       "isObstacle": true,
       "location": "file:Images\\\\TorchTest.gif"
@@ -918,7 +918,7 @@
           "value": 270,
           "howRare": "LEGENDARY",
           "r": {
-            "seed": 137654218118891,
+            "seed": 99759776386429,
             "nextNextGaussian": 0.0,
             "haveNextNextGaussian": false
           },
@@ -937,8 +937,8 @@
       "y": 350,
       "dx": 0,
       "dy": 0,
-      "width": 0,
-      "height": 0,
+      "width": 32,
+      "height": 32,
       "visible": true,
       "isObstacle": true,
       "location": "file:Images\\\\Weapons\\\\testSword.png"
@@ -950,16 +950,16 @@
           "armorType": "steel",
           "atk": 13,
           "magic": 0,
-          "def": 75,
+          "def": 76,
           "imageLocation": "file:Images\\\\Armors\\\\steel\\\\Shield.png",
-          "value": 188,
+          "value": 189,
           "howRare": "VERY_RARE",
           "r": {
-            "seed": 55121104513209,
+            "seed": 221871415028020,
             "nextNextGaussian": 0.0,
             "haveNextNextGaussian": false
           },
-          "random": 0,
+          "random": 1,
           "speedModifier": 5,
           "weight": 31.0,
           "hpBoost": 30,
@@ -974,8 +974,8 @@
       "y": 395,
       "dx": 0,
       "dy": 0,
-      "width": 0,
-      "height": 0,
+      "width": 32,
+      "height": 32,
       "visible": true,
       "isObstacle": true,
       "location": "file:Images\\\\Armors\\\\steel\\\\Shield.png"
@@ -991,8 +991,8 @@
       "y": 617,
       "dx": 0,
       "dy": 0,
-      "width": 0,
-      "height": 0,
+      "width": 16,
+      "height": 16,
       "visible": true,
       "isObstacle": true,
       "location": "file:Images\\Exit.png"
@@ -1005,18 +1005,18 @@
           "type": "items.Weapons.Sword",
           "data": {
             "weaponType": "steel",
-            "atk": 54,
-            "magic": 3,
+            "atk": 55,
+            "magic": 4,
             "def": 5,
             "imageLocation": "file:Images\\\\Weapons\\\\testSword.png",
-            "value": 270,
+            "value": 271,
             "howRare": "LEGENDARY",
             "r": {
-              "seed": 63761300082249,
+              "seed": 174407572300789,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 0,
+            "random": 1,
             "speedModifier": 2,
             "weight": 20.0,
             "hpBoost": 30,
@@ -1038,7 +1038,7 @@
             "value": 189,
             "howRare": "VERY_RARE",
             "r": {
-              "seed": 149450411795811,
+              "seed": 245710248701819,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
@@ -1070,18 +1070,18 @@
           "type": "items.Weapons.Axe",
           "data": {
             "weaponType": "steel",
-            "atk": 1353,
-            "magic": 0,
+            "atk": 1354,
+            "magic": 1,
             "def": 0,
             "imageLocation": "file:Images\\\\Weapons\\\\iron\\\\axe\\\\Axe.png",
-            "value": 54,
+            "value": 55,
             "howRare": "LEGENDARY",
             "r": {
-              "seed": 33172176198680,
+              "seed": 192172213891548,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 0,
+            "random": 1,
             "speedModifier": 1,
             "weight": 10.0,
             "hpBoost": 0,
@@ -1093,97 +1093,95 @@
           }
         },
         {
-          "type": "items.Consumables.Potion",
-          "data": {
-            "type": "Health",
-            "amount": 80,
-            "atk": 0,
-            "magic": 0,
-            "def": 0,
-            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
-            "value": 96,
-            "howRare": "COMMON",
-            "r": {
-              "seed": 279591713743222,
-              "nextNextGaussian": 0.0,
-              "haveNextNextGaussian": false
-            },
-            "random": 1,
-            "speedModifier": 0,
-            "weight": 0.1,
-            "hpBoost": 0,
-            "manaBoost": 0,
-            "simpleName": "Health Potion",
-            "toolTipText": "A(n) Health Potion",
-            "isCurrentlyEquipped": false,
-            "isFavorite": false
-          }
-        },
-        {
-          "type": "items.Weapons.Spear",
+          "type": "items.Weapons.Axe",
           "data": {
             "weaponType": "stone",
-            "atk": 7,
+            "atk": 4,
             "magic": 0,
             "def": 0,
-            "imageLocation": "Images\\Weapons\\stone\\spear\\Spear.png",
-            "value": 95,
-            "howRare": "COMMON",
+            "imageLocation": "Images\\Weapons\\stone\\axe\\Axe.png",
+            "value": 77,
+            "howRare": "JUNK",
             "r": {
-              "seed": 119867284178887,
+              "seed": 98171651229537,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
             "random": 0,
-            "speedModifier": 5,
-            "weight": 4.0,
+            "speedModifier": 3,
+            "weight": 3.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "stone spear",
-            "toolTipText": "A stone spear",
+            "simpleName": "stone axe",
+            "toolTipText": "A stone axe",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
         },
         {
-          "type": "items.Consumables.Potion",
+          "type": "items.Weapons.Sword",
           "data": {
-            "type": "Health",
-            "amount": 80,
-            "atk": 0,
+            "weaponType": "stone",
+            "atk": 4,
             "magic": 0,
             "def": 0,
-            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
-            "value": 96,
+            "imageLocation": "Images\\Weapons\\stone\\sword\\Sword.png",
+            "value": 84,
             "howRare": "COMMON",
             "r": {
-              "seed": 240323842788290,
+              "seed": 4699580034327,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 1,
-            "speedModifier": 0,
-            "weight": 0.1,
+            "random": 0,
+            "speedModifier": 2,
+            "weight": 2.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "Health Potion",
-            "toolTipText": "A(n) Health Potion",
+            "simpleName": "stone sword",
+            "toolTipText": "A stone sword",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
         },
         {
-          "type": "items.Armor.Helmet",
+          "type": "items.Armor.Gloves",
           "data": {
-            "armorType": "cloth",
+            "armorType": "bronze",
             "atk": 0,
             "magic": 0,
             "def": 3,
-            "imageLocation": "Images\\Armors\\cloth\\Helmet.png",
-            "value": 38,
+            "imageLocation": "Images\\Armors\\bronze\\Gloves.png",
+            "value": 60,
             "howRare": "COMMON",
             "r": {
-              "seed": 32176190677890,
+              "seed": 47852489728422,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 1,
+            "weight": 3.0,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "bronze gauntlets",
+            "toolTipText": "A pair of bronze gauntlets",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Armor.Boots",
+          "data": {
+            "armorType": "wood",
+            "atk": 0,
+            "magic": 0,
+            "def": 2,
+            "imageLocation": "Images\\Armors\\wood\\Boots.png",
+            "value": 47,
+            "howRare": "COMMON",
+            "r": {
+              "seed": 125643936604227,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
@@ -1192,8 +1190,8 @@
             "weight": 2.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "cloth hood",
-            "toolTipText": "A cloth hood",
+            "simpleName": "wood boots",
+            "toolTipText": "A pair of wood boots",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
@@ -1212,53 +1210,54 @@
     {
       "items": [
         {
-          "type": "items.Armor.ChestPiece",
+          "type": "items.Weapons.Sword",
           "data": {
-            "armorType": "wood",
-            "atk": 0,
+            "weaponType": "bronze",
+            "atk": 8,
             "magic": 0,
-            "def": 6,
-            "imageLocation": "Images\\Armors\\wood\\Chest.png",
-            "value": 107,
+            "def": 0,
+            "imageLocation": "Images\\Weapons\\bronze\\sword\\Sword.png",
+            "value": 166,
             "howRare": "COMMON",
             "r": {
-              "seed": 42497037381974,
+              "seed": 80973837164498,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
             "random": 0,
-            "speedModifier": 4,
-            "weight": 7.0,
+            "speedModifier": 2,
+            "weight": 4.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "wood armor",
-            "toolTipText": "A wood chest",
+            "simpleName": "bronze sword",
+            "toolTipText": "A bronze sword",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
         },
         {
-          "type": "items.Armor.Gloves",
+          "type": "items.Consumables.Potion",
           "data": {
-            "armorType": "cloth",
+            "type": "Health",
+            "amount": 80,
             "atk": 0,
             "magic": 0,
-            "def": 1,
-            "imageLocation": "Images\\Armors\\cloth\\Gloves.png",
-            "value": 31,
-            "howRare": "VERY_RARE",
+            "def": 0,
+            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
+            "value": 96,
+            "howRare": "COMMON",
             "r": {
-              "seed": 43582599882476,
+              "seed": 270617833090227,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 0,
-            "speedModifier": 1,
-            "weight": 1.0,
+            "random": 1,
+            "speedModifier": 0,
+            "weight": 0.1,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "cloth gloves",
-            "toolTipText": "A pair of cloth gloves",
+            "simpleName": "Health Potion",
+            "toolTipText": "A(n) Health Potion",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
@@ -1288,7 +1287,7 @@
             "value": 14,
             "howRare": "COMMON",
             "r": {
-              "seed": 84548326399713,
+              "seed": 72003602302324,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
@@ -1327,7 +1326,7 @@
             "value": 216,
             "howRare": "VERY_RARE",
             "r": {
-              "seed": 49291485224945,
+              "seed": 58988464140801,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
@@ -1356,32 +1355,6 @@
     {
       "items": [
         {
-          "type": "items.Armor.Shield",
-          "data": {
-            "armorType": "wood",
-            "atk": 2,
-            "magic": 0,
-            "def": 6,
-            "imageLocation": "Images\\Armors\\wood\\Shield.png",
-            "value": 86,
-            "howRare": "RARE",
-            "r": {
-              "seed": 112587931683633,
-              "nextNextGaussian": 0.0,
-              "haveNextNextGaussian": false
-            },
-            "random": 0,
-            "speedModifier": 2,
-            "weight": 3.0,
-            "hpBoost": 0,
-            "manaBoost": 0,
-            "simpleName": "wood shield",
-            "toolTipText": "A wood shield",
-            "isCurrentlyEquipped": false,
-            "isFavorite": false
-          }
-        },
-        {
           "type": "items.Consumables.Potion",
           "data": {
             "type": "Health",
@@ -1393,7 +1366,7 @@
             "value": 95,
             "howRare": "COMMON",
             "r": {
-              "seed": 139234651813782,
+              "seed": 33182476985943,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
@@ -1409,53 +1382,80 @@
           }
         },
         {
-          "type": "items.Weapons.Sword",
+          "type": "items.Armor.Legs",
           "data": {
-            "weaponType": "stone",
-            "atk": 3,
+            "armorType": "wood",
+            "atk": 0,
             "magic": 0,
-            "def": 0,
-            "imageLocation": "Images\\Weapons\\stone\\sword\\Sword.png",
-            "value": 75,
-            "howRare": "JUNK",
+            "def": 4,
+            "imageLocation": "Images\\Armors\\wood\\Legs.png",
+            "value": 53,
+            "howRare": "COMMON",
             "r": {
-              "seed": 102307800178644,
+              "seed": 134172950051083,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
             "random": 0,
             "speedModifier": 2,
-            "weight": 2.0,
+            "weight": 4.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "stone sword",
-            "toolTipText": "A stone sword",
+            "simpleName": "wood legs",
+            "toolTipText": "A pair of wood leggings",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
         },
         {
-          "type": "items.Weapons.Spear",
+          "type": "items.Armor.Gloves",
           "data": {
-            "weaponType": "stone",
-            "atk": 8,
+            "armorType": "wood",
+            "atk": 0,
             "magic": 0,
-            "def": 0,
-            "imageLocation": "Images\\Weapons\\stone\\spear\\Spear.png",
-            "value": 115,
-            "howRare": "RARE",
+            "def": 4,
+            "imageLocation": "Images\\Armors\\wood\\Gloves.png",
+            "value": 52,
+            "howRare": "LEGENDARY",
             "r": {
-              "seed": 69654270342609,
+              "seed": 253197982365596,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 0,
-            "speedModifier": 5,
-            "weight": 4.0,
+            "random": 1,
+            "speedModifier": 1,
+            "weight": 2.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "stone spear",
-            "toolTipText": "A stone spear",
+            "simpleName": "wood gauntlets",
+            "toolTipText": "A pair of wood gauntlets",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Consumables.Potion",
+          "data": {
+            "type": "Health",
+            "amount": 80,
+            "atk": 0,
+            "magic": 0,
+            "def": 0,
+            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
+            "value": 96,
+            "howRare": "COMMON",
+            "r": {
+              "seed": 211650453028658,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 1,
+            "speedModifier": 0,
+            "weight": 0.1,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "Health Potion",
+            "toolTipText": "A(n) Health Potion",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
@@ -1474,53 +1474,27 @@
     {
       "items": [
         {
-          "type": "items.Armor.ChestPiece",
+          "type": "items.Weapons.Axe",
           "data": {
-            "armorType": "bronze",
-            "atk": 0,
-            "magic": 0,
-            "def": 10,
-            "imageLocation": "Images\\Armors\\bronze\\Chest.png",
-            "value": 179,
+            "weaponType": "stone",
+            "atk": 6,
+            "magic": 1,
+            "def": 0,
+            "imageLocation": "Images\\Weapons\\stone\\axe\\Axe.png",
+            "value": 87,
             "howRare": "COMMON",
             "r": {
-              "seed": 100392937910848,
-              "nextNextGaussian": 0.0,
-              "haveNextNextGaussian": false
-            },
-            "random": 0,
-            "speedModifier": 4,
-            "weight": 11.0,
-            "hpBoost": 0,
-            "manaBoost": 0,
-            "simpleName": "bronze armor",
-            "toolTipText": "A bronze chest",
-            "isCurrentlyEquipped": false,
-            "isFavorite": false
-          }
-        },
-        {
-          "type": "items.Armor.ChestPiece",
-          "data": {
-            "armorType": "leather",
-            "atk": 0,
-            "magic": 0,
-            "def": 9,
-            "imageLocation": "Images\\Armors\\leather\\Chest.png",
-            "value": 144,
-            "howRare": "COMMON",
-            "r": {
-              "seed": 276964737919914,
+              "seed": 237962598824749,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
             "random": 1,
-            "speedModifier": 4,
-            "weight": 9.0,
+            "speedModifier": 3,
+            "weight": 3.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "leather armor",
-            "toolTipText": "A leather chest",
+            "simpleName": "stone axe",
+            "toolTipText": "A stone axe",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
@@ -1531,16 +1505,16 @@
             "armorType": "wood",
             "atk": 2,
             "magic": 0,
-            "def": 5,
+            "def": 6,
             "imageLocation": "Images\\Armors\\wood\\Shield.png",
-            "value": 71,
+            "value": 72,
             "howRare": "COMMON",
             "r": {
-              "seed": 13790628956884,
+              "seed": 207296030217768,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 0,
+            "random": 1,
             "speedModifier": 2,
             "weight": 3.0,
             "hpBoost": 0,
@@ -1552,27 +1526,54 @@
           }
         },
         {
-          "type": "items.Armor.Legs",
+          "type": "items.Consumables.Potion",
           "data": {
-            "armorType": "bronze",
+            "type": "Health",
+            "amount": 80,
             "atk": 0,
             "magic": 0,
-            "def": 6,
-            "imageLocation": "Images\\Armors\\bronze\\Legs.png",
-            "value": 81,
-            "howRare": "JUNK",
+            "def": 0,
+            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
+            "value": 95,
+            "howRare": "COMMON",
             "r": {
-              "seed": 205004099365563,
+              "seed": 110849486453635,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
-            "random": 1,
-            "speedModifier": 2,
-            "weight": 6.0,
+            "random": 0,
+            "speedModifier": 0,
+            "weight": 0.1,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "bronze legs",
-            "toolTipText": "A pair of bronze leggings",
+            "simpleName": "Health Potion",
+            "toolTipText": "A(n) Health Potion",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Weapons.Sword",
+          "data": {
+            "weaponType": "stone",
+            "atk": 4,
+            "magic": 0,
+            "def": 0,
+            "imageLocation": "Images\\Weapons\\stone\\sword\\Sword.png",
+            "value": 84,
+            "howRare": "COMMON",
+            "r": {
+              "seed": 134987807509906,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 2,
+            "weight": 2.0,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "stone sword",
+            "toolTipText": "A stone sword",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
@@ -1591,105 +1592,108 @@
     {
       "items": [
         {
-          "type": "items.Weapons.Sword",
-          "data": {
-            "weaponType": "stone",
-            "atk": 5,
-            "magic": 1,
-            "def": 0,
-            "imageLocation": "Images\\Weapons\\stone\\sword\\Sword.png",
-            "value": 85,
-            "howRare": "COMMON",
-            "r": {
-              "seed": 276146148422757,
-              "nextNextGaussian": 0.0,
-              "haveNextNextGaussian": false
-            },
-            "random": 1,
-            "speedModifier": 2,
-            "weight": 2.0,
-            "hpBoost": 0,
-            "manaBoost": 0,
-            "simpleName": "stone sword",
-            "toolTipText": "A stone sword",
-            "isCurrentlyEquipped": false,
-            "isFavorite": false
-          }
-        },
-        {
-          "type": "items.Weapons.Mace",
-          "data": {
-            "weaponType": "iron",
-            "atk": 16,
-            "magic": 1,
-            "def": 0,
-            "imageLocation": "Images\\Weapons\\iron\\mace\\Mace.png",
-            "value": 228,
-            "howRare": "JUNK",
-            "r": {
-              "seed": 226746876746624,
-              "nextNextGaussian": 0.0,
-              "haveNextNextGaussian": false
-            },
-            "random": 1,
-            "speedModifier": 4,
-            "weight": 10.0,
-            "hpBoost": 0,
-            "manaBoost": 0,
-            "simpleName": "iron mace",
-            "toolTipText": "A iron mace",
-            "isCurrentlyEquipped": false,
-            "isFavorite": false
-          }
-        },
-        {
-          "type": "items.Armor.Gloves",
-          "data": {
-            "armorType": "cloth",
-            "atk": 0,
-            "magic": 0,
-            "def": 2,
-            "imageLocation": "Images\\Armors\\cloth\\Gloves.png",
-            "value": 25,
-            "howRare": "COMMON",
-            "r": {
-              "seed": 190667010467070,
-              "nextNextGaussian": 0.0,
-              "haveNextNextGaussian": false
-            },
-            "random": 1,
-            "speedModifier": 1,
-            "weight": 1.0,
-            "hpBoost": 0,
-            "manaBoost": 0,
-            "simpleName": "cloth gloves",
-            "toolTipText": "A pair of cloth gloves",
-            "isCurrentlyEquipped": false,
-            "isFavorite": false
-          }
-        },
-        {
           "type": "items.Weapons.Dagger",
           "data": {
-            "weaponType": "stone",
-            "atk": 3,
+            "weaponType": "wood",
+            "atk": 2,
             "magic": 0,
             "def": 0,
-            "imageLocation": "Images\\Weapons\\stone\\dagger\\Dagger.png",
-            "value": 36,
+            "imageLocation": "Images\\Weapons\\wood\\dagger\\Dagger.png",
+            "value": 22,
             "howRare": "COMMON",
             "r": {
-              "seed": 52453515043769,
+              "seed": 41683618255572,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
             "random": 0,
             "speedModifier": 1,
-            "weight": 1.0,
+            "weight": 0.0,
             "hpBoost": 0,
             "manaBoost": 0,
-            "simpleName": "stone dagger",
-            "toolTipText": "A stone dagger",
+            "simpleName": "wood dagger",
+            "toolTipText": "A wood dagger",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Consumables.Potion",
+          "data": {
+            "type": "Health",
+            "amount": 80,
+            "atk": 0,
+            "magic": 0,
+            "def": 0,
+            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
+            "value": 95,
+            "howRare": "COMMON",
+            "r": {
+              "seed": 91924626360554,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 0,
+            "weight": 0.1,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "Health Potion",
+            "toolTipText": "A(n) Health Potion",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Consumables.Potion",
+          "data": {
+            "type": "Health",
+            "amount": 80,
+            "atk": 0,
+            "magic": 0,
+            "def": 0,
+            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
+            "value": 95,
+            "howRare": "COMMON",
+            "r": {
+              "seed": 128443221869221,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 0,
+            "weight": 0.1,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "Health Potion",
+            "toolTipText": "A(n) Health Potion",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Consumables.Potion",
+          "data": {
+            "type": "Health",
+            "amount": 75,
+            "atk": 0,
+            "magic": 0,
+            "def": 0,
+            "imageLocation": "Images\\Consumables\\Potions\\Health Potion.png",
+            "value": 95,
+            "howRare": "COMMON",
+            "r": {
+              "seed": 7108613670654,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 0,
+            "weight": 0.1,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "Health Potion",
+            "toolTipText": "A(n) Health Potion",
             "isCurrentlyEquipped": false,
             "isFavorite": false
           }
@@ -1718,7 +1722,7 @@
             "value": 12,
             "howRare": "JUNK",
             "r": {
-              "seed": 232852372775923,
+              "seed": 155849095449565,
               "nextNextGaussian": 0.0,
               "haveNextNextGaussian": false
             },
@@ -1834,8 +1838,13 @@
           "west": "file:Images\\\\Characters\\\\GenericNeutral\\\\GenericNeutralWest.png"
         }
       },
-      "questActivationTriggers": [],
-      "questTriggers": [],
+      "questActivationTriggers": [
+        {},
+        {}
+      ],
+      "questTriggers": [
+        {}
+      ],
       "x": 96,
       "y": 101,
       "dx": 0,

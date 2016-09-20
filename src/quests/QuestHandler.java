@@ -2,6 +2,12 @@ package quests;
 
 import characters.EnemyTypes;
 import items.Item;
+import quests.master.AllOtherQuests;
+import quests.master.AllStoryQuests;
+import quests.task.GatherTask;
+import quests.task.KillTask;
+import quests.task.Task;
+import quests.trigger.Trigger;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -31,6 +37,10 @@ public class QuestHandler {
             q.setActive(true);
             inActiveQuests.remove(q);
             activeQuests.add(q);
+            System.out.println("Quest Accept Success! *Quest Handler*"); //TODO delete this
+            if(priorityQuest == null) {
+                setPriorityQuest(q);
+            }
             //TODO begin quest popup menu (display name and description of the quest)
         }
         //else nothing
@@ -42,12 +52,11 @@ public class QuestHandler {
      * @param t The quest acceptance trigger
      */
     public static void acceptQuest(Trigger t) {
-        for(Quest quest: inActiveQuests) {
-            if(quest.getQuestAcceptanceTrigger() != null &&
-                    t.equals(quest.getQuestAcceptanceTrigger())) {
-                acceptQuest(quest);
+        inActiveQuests.forEach(q -> {
+            if(q.getQuestAcceptanceTrigger() != null && t.equals(q.getQuestAcceptanceTrigger())) {
+                acceptQuest(q);
             }
-        }
+        });
     }
 
     /**
@@ -102,6 +111,7 @@ public class QuestHandler {
         for (Quest q: activeQuests) {
             Trigger trigger = q.getCurrentTask().getTrigger();
             if(trigger != null && t.equals(trigger)) {
+                System.out.println("Trigger Check Successful! *Quest Handler*"); //TODO delete this
                 q.currentTaskComplete();
                 checkQuestCompletion(q);
             }
@@ -119,8 +129,8 @@ public class QuestHandler {
      */
     private static void checkQuestCompletion(Quest q) {
         if(q.getActive() && q.getComplete()) {
-            //TODO give out rewards (WHERE THE FUCK IS THE PLAYER SPRITE REFERENCE AT)
-
+            System.out.println("Quest Complete Success! *Quest Handler*"); //TODO delete this
+            //GameStage.gamePane.displayQuestSuccessPane(q); //gives out rewards for quest completion
             q.setActive(false);
             activeQuests.remove(q);
             completeQuests.add(q);
@@ -145,10 +155,16 @@ public class QuestHandler {
         return false;
     }
 
+    /**
+     * A Quest is acceptable if the given trigger is the accept trigger, the quest is
+     * not currently active, and all prerequisites have been met.
+     * @param t The trigger to test
+     * @return If the quest is acceptable (correct trigger & not currently active)
+     */
     public static boolean isAcceptable(Trigger t) {
         for(Quest quest: inActiveQuests) {
-            if(quest.getQuestAcceptanceTrigger() != null &&
-                    t.equals(quest.getQuestAcceptanceTrigger())) {
+            if(t.equals(quest.getQuestAcceptanceTrigger()) &&
+                    !quest.getActive()) {
                 return quest.isAcceptable();
             }
         }
@@ -156,20 +172,12 @@ public class QuestHandler {
     }
 
     /**
-     * Check if the given quest is active or not.
-     */
-    public static boolean isActive(Quest q) {
-        return activeQuests.contains(q);
-    }
-
-    /**
      * Check if the given quest activation trigger is associated with an active quest.
      */
     public static boolean isActive(Trigger t) {
         for(Quest quest: inActiveQuests) {
-            if(quest.getQuestAcceptanceTrigger() != null &&
-                    t.equals(quest.getQuestAcceptanceTrigger())) {
-                return isActive(quest);
+            if(t.equals(quest.getQuestAcceptanceTrigger())) {
+                return quest.getActive();
             }
         }
         return false;
@@ -210,12 +218,14 @@ public class QuestHandler {
      * @param q The new Priority Quest
      */
     public static void setPriorityQuest(Quest q) {
-        activeQuests.forEach(quest -> {
-            quest.setPriority(false);
-        });
+        if(priorityQuest != null) { //priorityQuest.setPriority(false) would probably also work
+            activeQuests.forEach(quest -> { //if there is efficiency problems try it
+                quest.setPriority(false);
+            });
+        }
         q.setPriority(true);
         priorityQuest = q;
-        //TODO gui refresh to display the new priority quest
+        //TODO gui refresh to display the new priority quest (if not done automatically)
     }
 
     /**
@@ -223,6 +233,11 @@ public class QuestHandler {
      * @return A LinkedList of all the quests in the game
      */
     public static List<Quest> fillQuests() {
-        return null;
-    } //TODO
+        List<Quest> result = new LinkedList<Quest>();
+        result.addAll(AllStoryQuests.initialize());
+        result.addAll(AllOtherQuests.initialize());
+        System.out.println("Fill Quests Successful! *Quest Handler*");
+
+        return result;
+    }
 }

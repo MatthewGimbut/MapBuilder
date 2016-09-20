@@ -1,7 +1,7 @@
-package quests;
+package quests.trigger;
 
 /**
- * quests.Trigger represents an object which has a special interaction when player collision is detected
+ * quests.trigger.Trigger represents an object which has a special interaction when player collision is detected
  * or when player interaction with an NPC holding a trigger occurs.
  *
  * The class itself has no special behavior but is used for general detection purposes by using

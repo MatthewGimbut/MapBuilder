@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import quests.master.AllStoryQuests;
 
 public class Main extends Application {
 
@@ -15,6 +16,8 @@ public class Main extends Application {
 
         Image icon = new Image("file:Images\\Nature\\Tree.png");
         primaryStage.getIcons().add(icon);
+
+        AllStoryQuests.initialize();
 
         primaryStage.setTitle("Map Builder");
         primaryStage.setScene(scene);
