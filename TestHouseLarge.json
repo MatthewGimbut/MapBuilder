@@ -658,10 +658,10 @@
       "questActivationTriggers": [],
       "questTriggers": [
         {
-          "trigger": "quest001_01"
+          "associatedWith": "quest001_01"
         },
         {
-          "trigger": "quest002_01"
+          "associatedWith": "quest002_01"
         }
       ],
       "x": 464,

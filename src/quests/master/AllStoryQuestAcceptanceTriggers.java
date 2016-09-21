@@ -8,6 +8,6 @@ import quests.trigger.Trigger;
  */
 public class AllStoryQuestAcceptanceTriggers {
 
-    public static Trigger trigger001 = new Trigger();
-    public static Trigger trigger002 = new Trigger();
+    public static Trigger trigger001 = new Trigger("quest001");
+    public static Trigger trigger002 = new Trigger("quest002");
 }

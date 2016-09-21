@@ -18,7 +18,7 @@ public class NPC extends Sprite {
 		super(x, y);
 		this.chara = chara;
 		this.message = message;
-		this.questActivationTriggers = new LinkedList<>();
+		questActivationTriggers = new LinkedList<>();
 		this.questTriggers = new LinkedList<>();
 		initNPC();
 	}
@@ -35,13 +35,16 @@ public class NPC extends Sprite {
 		/*
 		Npc's are created on map load so they will always retain the same set of triggers as long as you are in the
 		map, this will remove any already used triggers from the Npc before the user can interact with it.
+		Triggers will be removed for already completed and already activated quests.
 		Not very efficient, but it is the best solution I can come up with. Hopefully it isn't too bad.
+		Should be fine since NPCs will not hold that many triggers.
 		 */
+		//TODO implement a way to remove the trigger from the .map file
 		Iterator<Trigger> it = questActivationTriggers.iterator();
 		Trigger t = null;
 		while(it.hasNext()) {
 			t = it.next();
-			if(QuestHandler.checkQuestCompletion(t)) {
+			if(QuestHandler.isActive(t) || QuestHandler.checkQuestCompletion(t)) {
 				it.remove();
 			}
 		}
@@ -49,7 +52,7 @@ public class NPC extends Sprite {
 		it = questTriggers.iterator();
 		while(it.hasNext()) {
 			t = it.next();
-			if(QuestHandler.checkQuestCompletion(t)) {
+			if(QuestHandler.isActive(t) || QuestHandler.checkQuestCompletion(t)) {
 				it.remove();
 			}
 		}
@@ -70,7 +73,7 @@ public class NPC extends Sprite {
 
 	/**
 	 * Runs the private helper methods to determine if any quest interaction has occurred, if it has,
-	 * activate it.
+	 * activate it. Called upon NPC interaction.
 	 */
 	public void questInteraction() {
 		interactNormalQuestTriggers();
@@ -84,34 +87,51 @@ public class NPC extends Sprite {
 		if(questActivationTriggers.size() != 0) {
 			if(lastActivatedTrigger == null) {
 				if(QuestHandler.isAcceptable(questActivationTriggers.get(0))) {
-					lastActivatedTrigger = questActivationTriggers.get(0);
-					questActivationTriggers.remove(0);
-					QuestHandler.acceptQuest(lastActivatedTrigger);
+					acceptQuest();
 				} else {
-					//nothing for now (dialog of something)
+					//do nothing (dialog or something maybe)
 				}
 			} else { //lastActivatedTrigger != null
-				if(!QuestHandler.isActive(lastActivatedTrigger)) { //previous quest is done
-					if(QuestHandler.isAcceptable(questActivationTriggers.get(0))) { //next quest is ready
-						lastActivatedTrigger = questActivationTriggers.get(0);
-						questActivationTriggers.remove(0);
-						QuestHandler.acceptQuest(lastActivatedTrigger);
-					}
-					//otherwise, do nothing until next quest is ready
+				if(QuestHandler.isAcceptable(questActivationTriggers.get(0))) { //next quest is ready
+					acceptQuest();
 				}
-				//otherwise, do nothing until last quest is done
+				//otherwise, do nothing until next quest is ready
 			}
 		}
 	}
 
 	/**
-	 *
+	 * Private helper method which accepts the next quest from this NPC.
+	 */
+	private void acceptQuest() {
+		lastActivatedTrigger = questActivationTriggers.get(0);
+		questActivationTriggers.remove(0);
+		QuestHandler.acceptQuest(lastActivatedTrigger);
+		System.out.println("Quest Activation Success! *NPO*"); //TODO delete this
+	}
+
+	/**
+	 * Tests interaction with all of the quests on this NPC
 	 */
 	private void interactNormalQuestTriggers() {
-		if(questTriggers.size() != 0) { //ensures there are triggers
-			//check if any triggers are attached to an active task or not
-			questTriggers.forEach(QuestHandler::checkForTrigger);
-			//QuestHandler.checkForTrigger(Trigger t) handles actual completion of the task it is attached to
-		}
+		questTriggers.forEach(QuestHandler::checkForTrigger);
+		//QuestHandler.checkForTrigger(Trigger t) handles actual completion of the task it is attached to
+	}
+
+
+	public LinkedList<Trigger> getQuestTriggers() {
+		return questTriggers;
+	}
+
+	public void setQuestTriggers(LinkedList<Trigger> questTriggers) {
+		this.questTriggers = questTriggers;
+	}
+
+	public LinkedList<Trigger> getQuestActivationTriggers() {
+		return questActivationTriggers;
+	}
+
+	public void setQuestActivationTriggers(LinkedList<Trigger> questActivationTriggers) {
+		this.questActivationTriggers = questActivationTriggers;
 	}
 }

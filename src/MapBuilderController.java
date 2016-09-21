@@ -26,6 +26,8 @@ import javafx.stage.Stage;
 import map.InterfaceAdapter;
 import map.MapJSONTemplate;
 import map.MapParser;
+import quests.master.MasterQuests;
+import quests.trigger.Trigger;
 import sprites.*;
 
 import java.io.*;
@@ -40,18 +42,36 @@ public class MapBuilderController extends BorderPane {
     private GraphicsContext gc;
     private ObservableList<String> categories;
     private MapParser mapParser;
-    private final String GENERIC_DIRECTORY = "Images\\Objects\\Nature";
-    private final String LOOTABLE_DIRECTORY = "Images\\Objects\\Lootables";
-    private final String ENEMY_DIRECTORY = "Images\\Objects\\Enemies";
-    private final String NEUTRAL_DIRECTORY = "Images\\Objects\\Characters";
-    private final String MISC_DIRECTORY = "Images\\Objects\\Miscellaneous";
-    private final String STRUCTURE_DIRECTORY = "Images\\Objects\\Structures";
-    private final String ITEM_DIRECTORY = "Images\\Objects\\Items";
-    private final String LOWER_DIRECTORY = "Images\\Objects\\Lower";
-    private final String UPPER_DIRECTORY = "Images\\Objects\\Upper";
+    private final String GENERIC_DIRECTORY      = "Images\\Objects\\Nature";
+    private final String LOOTABLE_DIRECTORY     = "Images\\Objects\\Lootables";
+    private final String ENEMY_DIRECTORY        = "Images\\Objects\\Enemies";
+    private final String NEUTRAL_DIRECTORY      = "Images\\Objects\\Characters";
+    private final String MISC_DIRECTORY         = "Images\\Objects\\Miscellaneous";
+    private final String STRUCTURE_DIRECTORY    = "Images\\Objects\\Structures";
+    private final String ITEM_DIRECTORY         = "Images\\Objects\\Items";
+    private final String LOWER_DIRECTORY        = "Images\\Objects\\Lower";
+    private final String UPPER_DIRECTORY        = "Images\\Objects\\Upper";
+
+    private final String[] attack       = {"Attack (integer)", "Please enter the attack stat."};
+    private final String[] defense      = {"Defense (integer)", "Please enter the defense stat."};
+    private final String[] magic        = {"Magic (integer)", "Please enter the magic stat."};
+    private final String[] speed        = {"Speed (integer)", "Please enter the speed stat."};
+    private final String[] weight       = {"Weight (decimal)", "Please enter the weight stat."};
+    private final String[] hpBoost      = {"HP Boost (integer)", "Please enter the size of the HP boost."};
+    private final String[] manaBoost    = {"Mana boost (integer)", "Please enter the size of the mana boost."};
+    private final String[] gold         = {"Gold (integer)", "Please enter the gold value."};
+    private final String[] fileLoc      = {"File location (String)", "What is the unique image file location of the item? Should be formatted as such: file:Images\\Weapons\\wood\\Boots.png, with the file being located in the Images directory of the game."};
+    private final String[] name         = {"Name (String", "What is the unique name?"};
+    private final String[] tooltip      = {"Tooltip (String)", "What is the unique tooltip?"};
+    private final String[] level        = {"Level (integer)", "What is the level of the character?"};
+    private final String[] currentHP    = {"Current HP (integer)", "What is the current HP value of the character?"};
+    private final String[] maxHP        = {"Max HP (integer)", "What is the max HP value of the character?"};
+    private final String[] currentMana  = {"Current mana (integer)", "What is the current mana value of the character?"};
+    private final String[] maxMana      = {"Max mana (integer)", "What is the max mana value for the character?"};
+    private final String[] charName     = {"Name (String)", "What is the name of the character?"};
+    private final String[] potionVal    = {"Potion value (integer)", "What is the value of the potion? (Ex. how much it heals, the attack boost, etc.)"};
 
     private Stack<Sprite> removedItems;
-
 
     @FXML private ResourceBundle resources;
     @FXML private URL location;
@@ -337,6 +357,38 @@ public class MapBuilderController extends BorderPane {
                 m.getMapItems().forEach(sprite -> {
                     if(sprite.getImageLocation().contains("\\\\")) sprite.setImage(sprite.getImageLocation().replace("\\\\", "\\"));
                     sprite.setImage(sprite.getImageLocation().replace("C:\\Users\\Matthew\\workspace\\MapBuilder\\", ""));
+                    if(sprite instanceof NPC) {
+                        NPC npc = (NPC) sprite;
+                        LinkedList<Trigger> activationTriggerTemp = new LinkedList<>();
+                        LinkedList<Trigger> questTriggerTemp = new LinkedList<>();
+
+                        for(Trigger t : npc.getQuestActivationTriggers()) {
+                            MasterQuests master = MasterQuests.valueOf(t.getAssociatedWith());
+                            if(master != null) {
+                                activationTriggerTemp.add(master.getQuest().getQuestAcceptanceTrigger());
+                            } else {
+                                System.out.println("Failed to parse quest " + t.getAssociatedWith());
+                            }
+                        }
+
+                        for(Trigger t : npc.getQuestTriggers()) {
+                            String[] data = t.getAssociatedWith().split("_");
+                            MasterQuests master = MasterQuests.valueOf(data[0]);
+                            int taskNum = Integer.parseInt(data[1], 10);
+                            taskNum--;
+                            if(master != null) {
+                                questTriggerTemp.add(master.getQuest().getAllTasks().get(taskNum).getTrigger());
+                            } else {
+                                System.out.println("Failed to parse quest " + t.getAssociatedWith());
+                            }
+                        }
+
+                        npc.getQuestActivationTriggers().clear();
+                        npc.getQuestTriggers().clear();
+
+                        npc.setQuestActivationTriggers(activationTriggerTemp);
+                        npc.setQuestTriggers(questTriggerTemp);
+                    }
                 });
                 mapParser.setMapItems(m.getMapItems());
                 drawMap();
@@ -370,21 +422,8 @@ public class MapBuilderController extends BorderPane {
     }
 
     private void generateEnemy(String imageLoc) {
-        boolean success = false;
-        String name = "Default name";
-        TextInputDialog nameInput = new TextInputDialog();
-        nameInput.setTitle("NPC creation");
-        nameInput.setContentText("What is the name of the enemy?");
-
-        Optional<String> result1 = nameInput.showAndWait();
-        if (result1.isPresent()){
-            name = result1.get();
-        }
-
-
-
-        Enemy enemy = new Enemy(name, getLvl(), getCurrentHP(), getMaxHP(), getCurrentMana(), getMaxMana(), getAttack(), getMagic(), getDefense(),
-                getSpeed(), imageLoc, imageLoc, imageLoc, imageLoc);
+        Enemy enemy = new Enemy(getStringInput(charName), getIntegerInput(level), getIntegerInput(currentHP), getIntegerInput(maxHP), getIntegerInput(currentMana), getIntegerInput(maxMana), getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense),
+                getIntegerInput(speed), imageLoc, imageLoc, imageLoc, imageLoc);
         NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), enemy, getDialogueArray());
         System.out.println(npc.getImageLocation());
 
@@ -394,19 +433,7 @@ public class MapBuilderController extends BorderPane {
     }
 
     private void generateNeutral(String imageLoc) { //For now, the image location is not used because the neutral npc is created like a random one. Random image and direction are assigned until further notice.
-        boolean success = false;
-        String name = "Default name";
-        TextInputDialog nameInput = new TextInputDialog();
-        nameInput.setTitle("NPC creation");
-        nameInput.setContentText("What is the name of the NPC?");
-
-        Optional<String> result1 = nameInput.showAndWait();
-        if (result1.isPresent()){
-                name = result1.get();
-        }
-
-        Neutral neut = new Neutral(name);
-
+        Neutral neut = new Neutral(getStringInput(charName));
         NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), neut, getDialogueArray());
         System.out.println(npc.getImageLocation());
 
@@ -522,7 +549,7 @@ public class MapBuilderController extends BorderPane {
         }
 
         if(resultString.equals("Potion")) {
-            i = new Potion(getPotionType(), getPotionVal(), getGoldVal());
+            i = new Potion(getPotionType(), getIntegerInput(potionVal), getIntegerInput(gold));
         } else {
 
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -535,76 +562,99 @@ public class MapBuilderController extends BorderPane {
             alert.getButtonTypes().setAll(buttonTypeOne, buttonTypeTwo);
 
             Optional<ButtonType> promptResult = alert.showAndWait();
+
             if (promptResult.get() == buttonTypeOne){ //Unique
                 switch(resultString) {
                     case "Boots":
-                        i = new Boots(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Boots(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "ChestPiece":
-                        i = new ChestPiece(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new ChestPiece(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Gloves":
-                        i = new Gloves(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Gloves(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Helmet":
-                        i = new Helmet(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Helmet(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Shield":
-                        i = new Shield(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Shield(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Legs":
-                        i = new Legs(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Legs(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Axe":
-                        i = new Axe(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Axe(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Dagger":
-                        i = new Dagger(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Dagger(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Sword":
-                        i = new Sword(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Sword(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Spear":
-                        i = new Spear(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Spear(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Mace":
-                        i = new Mace(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType(), getUniqueFileLoc(), getUniqueName(), getUniqueTooltip());
+                        i = new Mace(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                 }
             } else if (promptResult.get() == buttonTypeTwo) { //Generic
                 switch(resultString) {
                     case "Boots":
-                        i = new Boots(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType());
+                        i = new Boots(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "ChestPiece":
-                        i = new ChestPiece(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType());
+                        i = new ChestPiece(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Gloves":
-                        i = new Gloves(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType());
+                        i = new Gloves(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Helmet":
-                        i = new Helmet(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType());
+                        i = new Helmet(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Shield":
-                        i = new Shield(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType());
+                        i = new Shield(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Legs":
-                        i = new Legs(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getArmorType());
+                        i = new Legs(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Axe":
-                        i = new Axe(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType());
+                        i = new Axe(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType());
                         break;
                     case "Dagger":
-                        i = new Dagger(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType());
+                        i = new Dagger(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType());
                         break;
                     case "Sword":
-                        i = new Sword(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType());
+                        i = new Sword(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType());
                         break;
                     case "Spear":
-                        i = new Spear(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType());
+                        i = new Spear(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType());
                         break;
                     case "Mace":
-                        i = new Mace(getAttack(), getMagic(), getDefense(), getSpeed(), getWeight(), getHPBoost(), getManaBoost(), getGoldVal(), getRarity(), getWeaponType());
+                        i = new Mace(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                                getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getWeaponType());
                         break;
                 }
             }
@@ -852,389 +902,62 @@ public class MapBuilderController extends BorderPane {
         return r;
     }
 
-    private int getLvl() {
-        int lvl = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Level");
-            dialog.setContentText("What is the level of the NPC?");
+    private int getIntegerInput(String[] info) {
+        int input = 0;
 
+        boolean success = false;
+        while (!success) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle(info[0]);
+            dialog.setContentText(info[1]);
             Optional<String> result = dialog.showAndWait();
             if (result.isPresent()){
                 try {
-                    lvl = Integer.parseInt(result.get());
-                    successfulItemNum = true;
+                    input = Integer.parseInt(result.get());
+                    success = true;
                 } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
+                    success = false;
                 }
             }
         }
 
-        return lvl;
+        return input;
     }
 
-    private int getCurrentHP() {
-        int hp = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Current HP");
-            dialog.setContentText("What is the current HP value of the NPC?");
+    private double getDoubleInput(String[] info) {
+        double input = 0.0;
 
+        boolean success = false;
+        while (!success) {
+            TextInputDialog dialog = new TextInputDialog();
+            dialog.setTitle(info[0]);
+            dialog.setContentText(info[1]);
             Optional<String> result = dialog.showAndWait();
             if (result.isPresent()){
                 try {
-                    hp = Integer.parseInt(result.get());
-                    successfulItemNum = true;
+                    input = Double.parseDouble(result.get());
+                    success = true;
                 } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
+                    success = false;
                 }
             }
         }
 
-        return hp;
+        return input;
     }
 
-    private int getMaxHP() {
-        int hp = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Max HP");
-            dialog.setContentText("What is the max HP value of the NPC?");
+    private String getStringInput(String[] info) {
+        String input = "Default name";
 
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    hp = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle(info[0]);
+        dialog.setContentText(info[1]);
+
+        Optional<String> result = dialog.showAndWait();
+        if (result.isPresent()) {
+            input = result.get();
         }
 
-        return hp;
-    }
-
-    private int getCurrentMana() {
-        int mana = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Current mana");
-            dialog.setContentText("What is the current mana value of the NPC?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    mana = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-
-        return mana;
-    }
-
-    private int getMaxMana() {
-        int mana = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Max mana");
-            dialog.setContentText("What is the max mana value of the NPC?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    mana = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-
-        return mana;
-    }
-
-    private int getAttack() {
-        int atk = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Attack value");
-            dialog.setContentText("What is the attack stat of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    atk = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-
-        return atk;
-    }
-
-    private int getDefense() {
-        int def = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Defense value");
-            dialog.setContentText("What is the defense stat of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    def = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return def;
-    }
-
-    private int getSpeed() {
-        int spd = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Speed value");
-            dialog.setContentText("What is the speed stat of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    spd = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return spd;
-    }
-
-    private double getWeight() {
-        double weight = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Weight value");
-            dialog.setContentText("What is the weight of the item? (To the nearest tenth)");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    weight = Double.parseDouble(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return weight;
-    }
-
-    private int getMagic() {
-        int magic = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Magic value");
-            dialog.setContentText("What is the magic stat of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    magic = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return magic;
-    }
-
-    private int getHPBoost() {
-        int hpBoost = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("HP Boost value");
-            dialog.setContentText("What is the HP boost of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    hpBoost = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return hpBoost;
-    }
-
-    private int getManaBoost() {
-        int mana = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Mana boost value");
-            dialog.setContentText("What is the mana boost of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    mana = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return mana;
-    }
-
-    private int getGoldVal() {
-        int gold = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Gold value");
-            dialog.setContentText("What is the gold value of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    gold = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return gold;
-    }
-
-    private int getPotionVal() {
-        int potVal = 0;
-        boolean successfulItemNum = false;
-        while (!successfulItemNum) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Potion value");
-            dialog.setContentText("What is the value of the potion? (Ex. how much it heals, the attack boost, etc.)");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    potVal = Integer.parseInt(result.get());
-                    successfulItemNum = true;
-                } catch(NumberFormatException e) {
-                    successfulItemNum = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-        return potVal;
-    }
-
-    private String getUniqueName() {
-        String name = "";
-
-        boolean successful = false;
-        while (!successful) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Unique name");
-            dialog.setContentText("What is the unique name of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    name = result.get();
-                    successful = true;
-                } catch(NumberFormatException e) {
-                    successful = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-
-        return name;
-    }
-
-    private String getUniqueTooltip() {
-        String tooltip = "";
-
-        boolean successful = false;
-        while (!successful) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Unique tooltip");
-            dialog.setContentText("What is the unique tooltip of the item?");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    tooltip = result.get();
-                    successful = true;
-                } catch(NumberFormatException e) {
-                    successful = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-
-        return tooltip;
-    }
-
-    private String getUniqueFileLoc() {
-        String fileLoc = "";
-
-        boolean successful = false;
-        while (!successful) {
-            TextInputDialog dialog = new TextInputDialog();
-            dialog.setTitle("Unique image");
-            dialog.setContentText("What is the unique image file location of the item? Should be formatted as such: file:Images\\Weapons\\wood\\Boots.png, with the file being located in the Images directory of the game.");
-
-            Optional<String> result = dialog.showAndWait();
-            if (result.isPresent()){
-                try {
-                    fileLoc = result.get();
-                    successful = true;
-                } catch(NumberFormatException e) {
-                    successful = false;
-                    System.out.println("invalid");
-                }
-            }
-        }
-
-        return fileLoc;
+        return input;
     }
 }

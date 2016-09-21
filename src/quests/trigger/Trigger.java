@@ -10,15 +10,26 @@ package quests.trigger;
  */
 public class Trigger {
 
-    private String trigger;
+    private String associatedWith;
 
-    public Trigger() { }
-
-    public String getTrigger() {
-        return trigger;
+    public Trigger(String associatedWith) {
+        this.associatedWith = associatedWith;
     }
 
+    public String getAssociatedWith() {
+        return associatedWith;
+    }
+
+    public void setAssociatedWith(String associatedWith) { this.associatedWith = associatedWith; }
+
     public void setTrigger(String trigger) {
-        this.trigger = trigger;
+        this.associatedWith = trigger;
+    }
+
+    public boolean equals(Object o) {
+        if(!(o instanceof Trigger)) {
+            return false;
+        }
+        return associatedWith.equals(((Trigger) o).getAssociatedWith());
     }
 }

@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/MapBuilderController.java" line="45" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a86e37da-31fb-45b3-b482-cf2407e3ef48" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilderController.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilderController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser$1.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/QuestHandler.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/QuestHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/master/AllStoryQuestAcceptanceTriggers.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/master/AllStoryQuestAcceptanceTriggers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/master/AllStoryTriggers.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/master/AllStoryTriggers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/trigger/LocationTrigger.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/trigger/LocationTrigger.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/quests/trigger/Trigger.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/quests/trigger/Trigger.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/sprites/NPC.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/sprites/NPC.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Map0-0.json" afterPath="$PROJECT_DIR$/Map0-0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Map0-1.json" afterPath="$PROJECT_DIR$/Map0-1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestHouseLarge.json" afterPath="$PROJECT_DIR$/TestHouseLarge.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map/MapParser.java" afterPath="$PROJECT_DIR$/src/map/MapParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapBuilderController.java" afterPath="$PROJECT_DIR$/src/MapBuilderController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java" afterPath="$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java" afterPath="$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java" afterPath="$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quests/trigger/Trigger.java" afterPath="$PROJECT_DIR$/src/quests/trigger/Trigger.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sprites/NPC.java" afterPath="$PROJECT_DIR$/src/sprites/NPC.java" />
     </list>
@@ -34,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="327" column="94" selection-start-line="327" selection-start-column="94" selection-end-line="327" selection-end-column="94" />
+            <state relative-caret-position="646">
+              <caret line="347" column="93" selection-start-line="347" selection-start-column="93" selection-end-line="347" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="155" column="37" selection-start-line="155" selection-start-column="37" selection-end-line="155" selection-end-column="37" />
+            <state relative-caret-position="260">
+              <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6970#6979#0" expanded="true" />
@@ -72,21 +81,18 @@
       <file leaf-file-name="LocationTrigger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding>
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="AllStoryTriggers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -95,7 +101,7 @@
       <file leaf-file-name="MapJSONTemplate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
+            <state relative-caret-position="609">
               <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
               <folding />
             </state>
@@ -105,8 +111,8 @@
       <file leaf-file-name="MasterQuests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/quests/master/MasterQuests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#628#629#0" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
@@ -118,10 +124,15 @@
       <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="1221">
+              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3679#3680#0" expanded="true" />
+                <element signature="e#3706#3707#0" expanded="true" />
+                <element signature="e#3774#3775#0" expanded="true" />
+                <element signature="e#3815#3816#0" expanded="true" />
+                <element signature="e#3875#3876#0" expanded="true" />
+                <element signature="e#3912#3913#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,25 +141,15 @@
       <file leaf-file-name="Trigger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/quests/trigger/Trigger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="595">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/quests/QuestHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,9 +196,12 @@
         <option value="$PROJECT_DIR$/src/quests/master/MasterQuests.java" />
         <option value="$PROJECT_DIR$/src/map/MapJSONTemplate.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
         <option value="$PROJECT_DIR$/src/map/MapParser.java" />
         <option value="$PROJECT_DIR$/src/quests/trigger/Trigger.java" />
+        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
+        <option value="$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java" />
+        <option value="$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java" />
+        <option value="$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java" />
         <option value="$PROJECT_DIR$/src/MapBuilderController.java" />
       </list>
     </option>
@@ -723,7 +727,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19251753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19251753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -998,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/quests/task/InteractTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1022,14 +1018,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quests/master/AllOtherQuestAcceptanceTriggers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1071,69 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quests/trigger/Trigger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quests/master/MasterQuests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="327" column="94" selection-start-line="327" selection-start-column="94" selection-end-line="327" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/quests/task/GatherTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1144,11 +1069,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="155" column="37" selection-start-line="155" selection-start-column="37" selection-end-line="155" selection-end-column="37" />
+        <state relative-caret-position="260">
+          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6970#6979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/trigger/Trigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1221">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#3679#3680#0" expanded="true" />
+            <element signature="e#3706#3707#0" expanded="true" />
+            <element signature="e#3774#3775#0" expanded="true" />
+            <element signature="e#3815#3816#0" expanded="true" />
+            <element signature="e#3875#3876#0" expanded="true" />
+            <element signature="e#3912#3913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quests/master/MasterQuests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapBuilderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="347" column="93" selection-start-line="347" selection-start-column="93" selection-end-line="347" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1000,7 +1000,7 @@
       "location": "file:Images\\Exit.png"
     },
     {
-      "nextMapLocation": "Saves\\\\Save01\\\\Maps\\\\TestHouseLarge.map",
+      "nextMapLocation": "Saves\\\\Save01\\\\Maps\\\\TestHouseLarge.json",
       "nextX": 468,
       "nextY": 420,
       "placement": "North",
@@ -1015,7 +1015,7 @@
       "location": "file:Images\\Exit.png"
     },
     {
-      "nextMapLocation": "Saves\\\\Save01\\\\Maps\\\\Map0-0.map",
+      "nextMapLocation": "Saves\\\\Save01\\\\Maps\\\\Map0-0.json",
       "nextX": 980,
       "nextY": 617,
       "placement": "East",

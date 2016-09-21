@@ -11,7 +11,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\TorchTest.gif"
+      "location": "file:Images\\TorchTest.gif"
     },
     {
       "x": 885,
@@ -22,7 +22,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\TorchTest.gif"
+      "location": "file:Images\\TorchTest.gif"
     },
     {
       "x": 5,
@@ -33,7 +33,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -44,7 +44,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 50,
@@ -55,7 +55,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 50,
@@ -66,7 +66,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 95,
@@ -77,7 +77,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 95,
@@ -88,7 +88,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 140,
@@ -99,7 +99,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 140,
@@ -110,7 +110,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 185,
@@ -121,7 +121,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 185,
@@ -132,7 +132,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 230,
@@ -143,7 +143,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 230,
@@ -154,7 +154,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 275,
@@ -165,7 +165,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 275,
@@ -176,7 +176,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 320,
@@ -187,7 +187,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 320,
@@ -198,7 +198,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 365,
@@ -209,7 +209,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 365,
@@ -220,7 +220,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 410,
@@ -231,7 +231,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 410,
@@ -242,7 +242,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 455,
@@ -253,7 +253,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 455,
@@ -264,7 +264,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 500,
@@ -275,7 +275,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 500,
@@ -286,7 +286,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 545,
@@ -297,7 +297,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 545,
@@ -308,7 +308,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 590,
@@ -319,7 +319,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 590,
@@ -330,7 +330,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 635,
@@ -341,7 +341,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 635,
@@ -352,7 +352,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 680,
@@ -363,7 +363,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 680,
@@ -374,7 +374,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 725,
@@ -385,7 +385,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 725,
@@ -396,7 +396,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 770,
@@ -407,7 +407,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 770,
@@ -418,7 +418,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 815,
@@ -429,7 +429,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 815,
@@ -440,7 +440,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 860,
@@ -451,7 +451,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 860,
@@ -462,7 +462,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 905,
@@ -473,7 +473,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 905,
@@ -484,7 +484,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 950,
@@ -495,7 +495,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 950,
@@ -506,7 +506,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -517,7 +517,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -528,7 +528,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -539,7 +539,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -550,7 +550,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -561,7 +561,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -572,7 +572,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -583,7 +583,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -594,7 +594,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -605,7 +605,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -616,7 +616,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -627,7 +627,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -638,7 +638,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -649,7 +649,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -660,7 +660,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -671,7 +671,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -682,7 +682,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 5,
@@ -693,7 +693,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -704,7 +704,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -715,7 +715,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -726,7 +726,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -737,7 +737,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -748,7 +748,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -759,7 +759,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -770,7 +770,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -781,7 +781,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -792,7 +792,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -803,7 +803,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -814,7 +814,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -825,7 +825,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -836,7 +836,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 995,
@@ -847,7 +847,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 250,
@@ -858,7 +858,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 503,
@@ -869,7 +869,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 154,
@@ -880,7 +880,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 653,
@@ -891,7 +891,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     },
     {
       "x": 173,
@@ -902,7 +902,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Nature\\\\Tree.png"
+      "location": "file:Images\\Nature\\Tree.png"
     }
   ],
   "displayItems": [
@@ -941,7 +941,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Weapons\\\\testSword.png"
+      "location": "file:Images\\Weapons\\testSword.png"
     },
     {
       "item": {
@@ -978,7 +978,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Armors\\\\steel\\\\Shield.png"
+      "location": "file:Images\\Armors\\steel\\Shield.png"
     }
   ],
   "exits": [
@@ -1062,7 +1062,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1206,7 +1206,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1271,7 +1271,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1311,7 +1311,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1350,7 +1350,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1468,7 +1468,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1586,7 +1586,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1704,7 +1704,7 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\ChestArea.png"
+      "location": "file:Images\\Lootables\\ChestArea.png"
     },
     {
       "items": [
@@ -1743,7 +1743,72 @@
       "height": 33,
       "visible": true,
       "isObstacle": true,
-      "location": "file:Images\\\\Lootables\\\\SmallCrates.png"
+      "location": "file:Images\\Lootables\\SmallCrates.png"
+    },
+    {
+      "items": [
+        {
+          "type": "items.Armor.ChestPiece",
+          "data": {
+            "armorType": "cloth",
+            "atk": 3,
+            "magic": 3,
+            "def": 3,
+            "imageLocation": "Images\\Armors\\cloth\\Chest.png",
+            "value": 3,
+            "howRare": "RARE",
+            "r": {
+              "seed": 37614715263340,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 5,
+            "weight": 3.0,
+            "hpBoost": 5,
+            "manaBoost": 5,
+            "simpleName": "cloth armor",
+            "toolTipText": "A cloth chest",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        },
+        {
+          "type": "items.Weapons.Axe",
+          "data": {
+            "weaponType": "iron",
+            "atk": 10,
+            "magic": 10,
+            "def": 10,
+            "imageLocation": "Images\\Weapons\\iron\\Axe.png",
+            "value": 10,
+            "howRare": "VERY_RARE",
+            "r": {
+              "seed": 12999951992500,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 0,
+            "speedModifier": 5,
+            "weight": 7.0,
+            "hpBoost": 5,
+            "manaBoost": 5,
+            "simpleName": "iron axe",
+            "toolTipText": "A iron axe",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        }
+      ],
+      "x": 450,
+      "y": 526,
+      "dx": 0,
+      "dy": 0,
+      "width": 34,
+      "height": 33,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Lootables\\ChestAreaNew.png"
     }
   ],
   "lowerLayers": [],
@@ -1808,7 +1873,7 @@
         null,
         null
       ],
-      "location": "file:Images\\\\Characters\\\\GenericNeutral\\\\GenericNeutralWest.png"
+      "location": "file:Images\\Characters\\GenericNeutral\\GenericNeutralWest.png"
     },
     {
       "chara": {
@@ -1837,15 +1902,15 @@
       },
       "questActivationTriggers": [
         {
-          "trigger": "quest001"
+          "associatedWith": "quest001"
         },
         {
-          "trigger": "quest002"
+          "associatedWith": "quest002"
         }
       ],
       "questTriggers": [
         {
-          "trigger": "quest001_02"
+          "associatedWith": "quest001_02"
         }
       ],
       "x": 96,
@@ -1878,7 +1943,7 @@
         null,
         null
       ],
-      "location": "file:Images\\\\Characters\\\\GenericNeutral\\\\GenericNeutralSouth.png"
+      "location": "file:Images\\Characters\\GenericNeutral\\GenericNeutralSouth.png"
     }
   ],
   "saves": [

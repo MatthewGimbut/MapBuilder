@@ -9,8 +9,8 @@ import quests.trigger.Trigger;
  */
 public class AllStoryTriggers {
 
-    public static Trigger trigger001_01 = new Trigger();
-    public static Trigger trigger001_02 = new Trigger();
+    public static Trigger trigger001_01 = new Trigger("quest001_01");
+    public static Trigger trigger001_02 = new Trigger("quest001_02");
 
-    public static Trigger trigger002_01 = new Trigger();
+    public static Trigger trigger002_01 = new Trigger("quest002_01");
 }
