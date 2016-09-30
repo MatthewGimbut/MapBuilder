@@ -657,7 +657,7 @@ public class MapParser {
     private  boolean intersectsObstacle(ArrayList<Sprite> mapItems, Sprite testSprite) {
 		//Rectangle2D playerBounds = player.getBounds();
 		for(Sprite sprite : mapItems) {
-			if(testSprite.getBounds().intersects(sprite.getBounds())) {
+			if(testSprite.getBounds().intersects(sprite.getBounds()) && sprite != MapBuilderController.marker) {
 				return !(testSprite instanceof LowerLayer);
 			}
 		}

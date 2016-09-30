@@ -1,0 +1,28 @@
+{
+  "id": "grass",
+  "fileLocation": "testeexit.json",
+  "genericObstacles": [],
+  "displayItems": [],
+  "exits": [
+    {
+      "nextMapLocation": "Map0-0.map",
+      "nextX": 300,
+      "nextY": 200,
+      "placement": "South",
+      "x": 100,
+      "y": 100,
+      "dx": 0,
+      "dy": 0,
+      "width": 16,
+      "height": 16,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Exit.png"
+    }
+  ],
+  "lootables": [],
+  "lowerLayers": [],
+  "npcs": [],
+  "saves": [],
+  "upperLayers": []
+}

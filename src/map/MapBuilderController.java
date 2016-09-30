@@ -1,3 +1,5 @@
+package map;
+
 import characters.Character;
 import characters.Enemy;
 import characters.Neutral;
@@ -9,6 +11,8 @@ import items.Consumables.PotionType;
 import items.Item;
 import items.Rarity;
 import items.Weapons.*;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -18,6 +22,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
@@ -52,29 +57,36 @@ public class MapBuilderController extends BorderPane {
     private final String LOWER_DIRECTORY        = "Images\\Objects\\Lower";
     private final String UPPER_DIRECTORY        = "Images\\Objects\\Upper";
 
-    private final String[] attack       = {"Attack (integer)", "Please enter the attack stat."};
-    private final String[] defense      = {"Defense (integer)", "Please enter the defense stat."};
-    private final String[] magic        = {"Magic (integer)", "Please enter the magic stat."};
-    private final String[] speed        = {"Speed (integer)", "Please enter the speed stat."};
-    private final String[] weight       = {"Weight (decimal)", "Please enter the weight stat."};
-    private final String[] hpBoost      = {"HP Boost (integer)", "Please enter the size of the HP boost."};
-    private final String[] manaBoost    = {"Mana boost (integer)", "Please enter the size of the mana boost."};
-    private final String[] gold         = {"Gold (integer)", "Please enter the gold value."};
-    private final String[] fileLoc      = {"File location (String)", "What is the unique image file location of the item? Should be formatted as such: file:Images\\Weapons\\wood\\Boots.png, with the file being located in the Images directory of the game."};
-    private final String[] name         = {"Name (String", "What is the unique name?"};
-    private final String[] tooltip      = {"Tooltip (String)", "What is the unique tooltip?"};
-    private final String[] level        = {"Level (integer)", "What is the level of the character?"};
-    private final String[] currentHP    = {"Current HP (integer)", "What is the current HP value of the character?"};
-    private final String[] maxHP        = {"Max HP (integer)", "What is the max HP value of the character?"};
-    private final String[] currentMana  = {"Current mana (integer)", "What is the current mana value of the character?"};
-    private final String[] maxMana      = {"Max mana (integer)", "What is the max mana value for the character?"};
-    private final String[] charName     = {"Name (String)", "What is the name of the character?"};
-    private final String[] potionVal    = {"Potion value (integer)", "What is the value of the potion? (Ex. how much it heals, the attack boost, etc.)"};
+    private final String[] attack       = { "Attack (integer)", "Please enter the attack stat."};
+    private final String[] defense      = { "Defense (integer)", "Please enter the defense stat."};
+    private final String[] magic        = { "Magic (integer)", "Please enter the magic stat."};
+    private final String[] speed        = { "Speed (integer)", "Please enter the speed stat."};
+    private final String[] weight       = { "Weight (decimal)", "Please enter the weight stat."};
+    private final String[] hpBoost      = { "HP Boost (integer)", "Please enter the size of the HP boost."};
+    private final String[] manaBoost    = { "Mana boost (integer)", "Please enter the size of the mana boost."};
+    private final String[] gold         = { "Gold (integer)", "Please enter the gold value."};
+    private final String[] fileLoc      = { "File location (String)", "What is the unique image file location of the item? Should be formatted as such: file:Images\\Weapons\\wood\\Boots.png, with the file being located in the Images directory of the game."};
+    private final String[] name         = { "Name (String", "What is the unique name?"};
+    private final String[] tooltip      = { "Tooltip (String)", "What is the unique tooltip?"};
+    private final String[] level        = { "Level (integer)", "What is the level of the character?"};
+    private final String[] currentHP    = { "Current HP (integer)", "What is the current HP value of the character?"};
+    private final String[] maxHP        = { "Max HP (integer)", "What is the max HP value of the character?"};
+    private final String[] currentMana  = { "Current mana (integer)", "What is the current mana value of the character?"};
+    private final String[] maxMana      = { "Max mana (integer)", "What is the max mana value for the character?"};
+    private final String[] charName     = { "Name (String)", "What is the name of the character?"};
+    private final String[] potionVal    = { "Potion value (integer)", "What is the value of the potion? (Ex. how much it heals, the attack boost, etc.)"};
+    private final String[] nextExitX    = { "Next X", "What is the value of the X coordinate the player should be at in the next map?"};
+    private final String[] nextExitY    = { "Next Y", "What is the value of the Y coordinate the player should be at in the next map?"};
+    private final String[] direction    = { "Direction", "What is the direction the player should be facing in the next map?"};
+    private final String[] mapLoc       = { "Next map file", "What is the location of the next map file? (Ex: Map0-0.json, TestHouseLarge.json)"};
 
     private Stack<Sprite> removedItems;
 
+    public static Sprite marker;
+
     @FXML private ResourceBundle resources;
     @FXML private URL location;
+    @FXML private Button remove;
     @FXML private Button addToMap;
     @FXML private AnchorPane anchor;
     @FXML private ImageView blackBackground;
@@ -98,6 +110,9 @@ public class MapBuilderController extends BorderPane {
     @FXML private Button redo;
     @FXML private Button saveJSON;
     @FXML private Button loadJSON;
+    @FXML public Button front;
+
+    private final int markerSpeed = 5;
 
 
     public MapBuilderController(Stage primaryStage) {
@@ -105,6 +120,33 @@ public class MapBuilderController extends BorderPane {
         this.mapParser = new MapParser();
         this.categories = FXCollections.observableArrayList("Generic Obstacles", "Lootables", "Enemies", "Neutral NPCs", "Miscellaneous", "Structures", "Lower Layer", "Upper Layer","Items");
         this.removedItems = new Stack<>();
+        this.marker = new Sprite(0, 0, "file:Images\\Arrow.png");
+        marker.setObstacle(false);
+        this.mapParser.getMapItems().add(marker);
+
+        this.setOnKeyPressed((KeyEvent key) -> {
+            switch(key.getCode().toString()) {
+                case "LEFT":
+                    marker.setX(marker.getX() - markerSpeed);
+                    this.requestFocus();
+                    break;
+                case "RIGHT":
+                    marker.setX(marker.getX() + markerSpeed);
+                    this.requestFocus();
+                    break;
+                case "UP":
+                    marker.setY(marker.getY() - markerSpeed);
+                    this.requestFocus();
+                    break;
+                case "DOWN":
+                    marker.setY(marker.getY() + markerSpeed);
+                    this.requestFocus();
+                    break;
+            }
+            drawMap();
+            x.setText(marker.getX() + "");
+            y.setText(marker.getY() + "");
+        });
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource(
                 "MapBuilder.fxml"));
@@ -112,7 +154,8 @@ public class MapBuilderController extends BorderPane {
         try {
             fxmlLoader.load();
         } catch (IOException exception) {
-            throw new RuntimeException(exception);
+            System.out.println(exception.getMessage());
+            exception.printStackTrace();
         }
     }
 
@@ -215,11 +258,13 @@ public class MapBuilderController extends BorderPane {
 
         treeBorder.setOnAction(event -> {
             mapParser.placeTreeBorder();
+            front.fire();
             drawMap();
         });
 
         clear.setOnAction(event -> {
             mapParser = new MapParser();
+            front.fire();
             drawMap();
         });
 
@@ -292,10 +337,53 @@ public class MapBuilderController extends BorderPane {
             }
         });
 
+        x.textProperty().addListener(new CoordinateListener(x));
+        y.textProperty().addListener(new CoordinateListener(y));
+
+        remove.setOnAction(event -> {
+            int xCoord;
+            try {
+                xCoord = Integer.parseInt(x.getText());
+            } catch (NumberFormatException e) {
+                xCoord = 0;
+            }
+
+            int yCoord;
+            try {
+                yCoord = Integer.parseInt(y.getText());
+            } catch (NumberFormatException e) {
+                yCoord = 0;
+            }
+
+            Sprite sprite = new Sprite(xCoord, yCoord, "Images\\Arrow.png");
+            boolean found = false;
+            for(int i = 0; i < mapParser.getMapItems().size() && !found; i++) {
+                if(mapParser.getMapItems().get(i).intersects(sprite) && !mapParser.getMapItems().get(i).equals(marker)) {
+                    removedItems.push(mapParser.getMapItems().get(i));
+                    mapParser.getMapItems().remove(i);
+                    drawMap();
+                    found = true;
+                }
+            }
+            front.fire();
+        });
+
+        front.setOnAction(event -> {
+            if(mapParser.getMapItems().contains(marker)) {
+                mapParser.getMapItems().remove(marker);
+                mapParser.getMapItems().add(marker);
+            } else {
+                mapParser.getMapItems().add(marker);
+            }
+            this.requestFocus();
+            drawMap();
+        });
+
         undo.setOnAction(event -> {
             if(mapParser.getMapItems().size() > 0) {
                 removedItems.push(mapParser.getMapItems().get(mapParser.getMapItems().size()-1));
                 mapParser.getMapItems().remove(mapParser.getMapItems().size()-1);
+                front.fire();
                 drawMap();
             }
         });
@@ -304,12 +392,14 @@ public class MapBuilderController extends BorderPane {
             if(removedItems.size() > 0) {
                 Sprite sprite = removedItems.pop();
                 if(!mapParser.addItem(sprite)) removedItems.push(sprite);
+                front.fire();
                 drawMap();
             }
         });
 
         saveJSON.setOnAction(event -> {
             String file = getFileLocation();
+            mapParser.getMapItems().remove(marker);
             MapJSONTemplate m = new MapJSONTemplate(mapParser.getMapItems(), mapParser.getBackground(), file);
 
             PrintWriter writer = null;
@@ -334,6 +424,8 @@ public class MapBuilderController extends BorderPane {
                 System.out.println("Error writing JSON!");
                 System.out.println(e.getMessage());
             }
+
+            mapParser.getMapItems().add(marker);
         });
 
         loadJSON.setOnAction(event -> {
@@ -396,6 +488,7 @@ public class MapBuilderController extends BorderPane {
                 System.out.println("Error loading JSON!");
                 System.out.println(e.getMessage());
             }
+            front.fire();
         });
 
         this.setCenter(anchor);
@@ -703,7 +796,10 @@ public class MapBuilderController extends BorderPane {
                 displayIntersectionError();
             }
         } else if(imageLoc.endsWith("ExitVisible.png")) {
-            //TODO exit code
+            Exit exit = new Exit(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), getIntegerInput(nextExitX), getIntegerInput(nextExitY), getCardinal(), getStringInput(mapLoc));
+            if(!mapParser.addItem(exit)) {
+                displayIntersectionError();
+            }
         }
     }
 
@@ -902,6 +998,46 @@ public class MapBuilderController extends BorderPane {
         return r;
     }
 
+    private Cardinal getCardinal() {
+        Cardinal c = null;
+
+        List<String> choices = new ArrayList<>();
+        choices.add("North");
+        choices.add("South");
+        choices.add("East");
+        choices.add("West");
+
+        String resultString = "";
+        ChoiceDialog<String> dialog = new ChoiceDialog<>("North", choices);
+        dialog.setTitle("Direction");
+        dialog.setContentText("Choose direction the player should face when entering new map:");
+        Optional<String> result = dialog.showAndWait();
+        if (result.isPresent()){
+            resultString = result.get();
+        }
+
+        switch(resultString) {
+            case "North":
+                c = Cardinal.North;
+                break;
+            case "South":
+                c = Cardinal.South;
+                break;
+            case "East":
+                c = Cardinal.East;
+                break;
+            case "West":
+                c = Cardinal.West;
+                break;
+            default:
+                c = Cardinal.North;
+                break;
+        }
+
+        return c;
+    }
+
+
     private int getIntegerInput(String[] info) {
         int input = 0;
 
@@ -959,5 +1095,39 @@ public class MapBuilderController extends BorderPane {
         }
 
         return input;
+    }
+
+    private class CoordinateListener implements ChangeListener<String> {
+
+        private TextField source;
+
+        public CoordinateListener(TextField source) {
+            this.source = source;
+        }
+
+        @Override
+        public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+            if (!newValue.matches("\\d*")) {
+                source.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+
+            int xCoord;
+            try {
+                xCoord = Integer.parseInt(x.getText());
+            } catch (NumberFormatException e) {
+                xCoord = 0;
+            }
+
+            int yCoord;
+            try {
+                yCoord = Integer.parseInt(y.getText());
+            } catch (NumberFormatException e) {
+                yCoord = 0;
+            }
+
+            marker.setX(xCoord);
+            marker.setY(yCoord);
+            drawMap();
+        }
     }
 }
