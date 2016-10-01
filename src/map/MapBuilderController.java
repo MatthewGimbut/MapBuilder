@@ -42,8 +42,8 @@ import java.util.*;
 public class MapBuilderController extends BorderPane {
 
     private Stage primaryStage;
-    private final String BACKGROUND_STRING = "-fx-background-position: center center; " +
-            "-fx-background-repeat: stretch;";
+    private final String BACKGROUND_STRING      = "-fx-background-position: center center; " +
+                                                     "-fx-background-repeat: stretch;";
     private GraphicsContext gc;
     private ObservableList<String> categories;
     private MapParser mapParser;
@@ -56,29 +56,28 @@ public class MapBuilderController extends BorderPane {
     private final String ITEM_DIRECTORY         = "Images\\Objects\\Items";
     private final String LOWER_DIRECTORY        = "Images\\Objects\\Lower";
     private final String UPPER_DIRECTORY        = "Images\\Objects\\Upper";
-
-    private final String[] attack       = { "Attack (integer)", "Please enter the attack stat."};
-    private final String[] defense      = { "Defense (integer)", "Please enter the defense stat."};
-    private final String[] magic        = { "Magic (integer)", "Please enter the magic stat."};
-    private final String[] speed        = { "Speed (integer)", "Please enter the speed stat."};
-    private final String[] weight       = { "Weight (decimal)", "Please enter the weight stat."};
-    private final String[] hpBoost      = { "HP Boost (integer)", "Please enter the size of the HP boost."};
-    private final String[] manaBoost    = { "Mana boost (integer)", "Please enter the size of the mana boost."};
-    private final String[] gold         = { "Gold (integer)", "Please enter the gold value."};
-    private final String[] fileLoc      = { "File location (String)", "What is the unique image file location of the item? Should be formatted as such: file:Images\\Weapons\\wood\\Boots.png, with the file being located in the Images directory of the game."};
-    private final String[] name         = { "Name (String", "What is the unique name?"};
-    private final String[] tooltip      = { "Tooltip (String)", "What is the unique tooltip?"};
-    private final String[] level        = { "Level (integer)", "What is the level of the character?"};
-    private final String[] currentHP    = { "Current HP (integer)", "What is the current HP value of the character?"};
-    private final String[] maxHP        = { "Max HP (integer)", "What is the max HP value of the character?"};
-    private final String[] currentMana  = { "Current mana (integer)", "What is the current mana value of the character?"};
-    private final String[] maxMana      = { "Max mana (integer)", "What is the max mana value for the character?"};
-    private final String[] charName     = { "Name (String)", "What is the name of the character?"};
-    private final String[] potionVal    = { "Potion value (integer)", "What is the value of the potion? (Ex. how much it heals, the attack boost, etc.)"};
-    private final String[] nextExitX    = { "Next X", "What is the value of the X coordinate the player should be at in the next map?"};
-    private final String[] nextExitY    = { "Next Y", "What is the value of the Y coordinate the player should be at in the next map?"};
-    private final String[] direction    = { "Direction", "What is the direction the player should be facing in the next map?"};
-    private final String[] mapLoc       = { "Next map file", "What is the location of the next map file? (Ex: Saves\\\\Save01\\\\Maps\\\\Map0-1.json)"};
+    private final String[] attack               = { "Attack (integer)"          , "Please enter the attack stat." };
+    private final String[] defense              = { "Defense (integer)"         , "Please enter the defense stat." };
+    private final String[] magic                = { "Magic (integer)"           , "Please enter the magic stat." };
+    private final String[] speed                = { "Speed (integer)"           , "Please enter the speed stat." };
+    private final String[] weight               = { "Weight (decimal)"          , "Please enter the weight stat." };
+    private final String[] hpBoost              = { "HP Boost (integer)"        , "Please enter the size of the HP boost." };
+    private final String[] manaBoost            = { "Mana boost (integer)"      , "Please enter the size of the mana boost." };
+    private final String[] gold                 = { "Gold (integer)"            , "Please enter the gold value." };
+    private final String[] fileLoc              = { "File location (String)"    , "What is the unique image file location of the item? Should be formatted as such: file:Images\\Weapons\\wood\\Boots.png, with the file being located in the Images directory of the game." };
+    private final String[] name                 = { "Name (String"              , "What is the unique name?" };
+    private final String[] tooltip              = { "Tooltip (String)"          , "What is the unique tooltip?" };
+    private final String[] level                = { "Level (integer)"           , "What is the level of the character?" };
+    private final String[] currentHP            = { "Current HP (integer)"      , "What is the current HP value of the character?" };
+    private final String[] maxHP                = { "Max HP (integer)"          , "What is the max HP value of the character?" };
+    private final String[] currentMana          = { "Current mana (integer)"    , "What is the current mana value of the character?" };
+    private final String[] maxMana              = { "Max mana (integer)"        , "What is the max mana value for the character?" };
+    private final String[] charName             = { "Name (String)"             , "What is the name of the character?" };
+    private final String[] potionVal            = { "Potion value (integer)"    , "What is the value of the potion? (Ex. how much it heals, the attack boost, etc.)" };
+    private final String[] nextExitX            = { "Next X"                    , "What is the value of the X coordinate the player should be at in the next map?" };
+    private final String[] nextExitY            = { "Next Y"                    , "What is the value of the Y coordinate the player should be at in the next map?" };
+    private final String[] direction            = { "Direction"                 , "What is the direction the player should be facing in the next map?" };
+    private final String[] mapLoc               = { "Next map file"             , "What is the location of the next map file? (Ex: Saves\\\\Save01\\\\Maps\\\\Map0-1.json)" };
 
     private Stack<Sprite> removedItems;
 
