@@ -1082,8 +1082,28 @@ public class MapParser {
 			mapItems.add(sprite);
 			return true;
 		} else {
+			mapItems.add(sprite);
 			return false;
 		}
+	}
+
+	/**
+	 * Sorts lowerlayer to the end so that it works properly with the mapbuilder display.
+	 */
+	public void sortSprites() {
+		ArrayList<LowerLayer> lower = new ArrayList<>();
+		ArrayList<Sprite> other = new ArrayList<>();
+		mapItems.forEach(mapItem -> {
+			if(mapItem instanceof LowerLayer) {
+				lower.add((LowerLayer) mapItem);
+			} else {
+				other.add(mapItem);
+			}
+		});
+
+		mapItems.clear();
+		mapItems.addAll(lower);
+		mapItems.addAll(other);
 	}
 
 	public boolean isHostile() {

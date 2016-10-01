@@ -12,7 +12,7 @@ public class Legs extends Armor {
 
 	public Legs(int atk, int magic, int def, int speedModifier, double weight, int hpBoost, int manaBoost, int value, Rarity howRare, ArmorType armorType) {
 		super(atk, magic, def, speedModifier, weight, hpBoost, manaBoost, value, howRare, armorType);
-		this.setImageLocation("Images\\Armors\\" + this.getArmorType().toString() + "\\Gloves.png");
+		this.setImageLocation("Images\\Armors\\" + this.getArmorType().toString() + "\\Legs.png");
 		this.setSimpleName(this.getArmorType() + " legs");
 		this.setItemToolTipText("A pair of " + this.getArmorType() + " leggings");
 	}

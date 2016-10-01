@@ -78,12 +78,13 @@ public class MapBuilderController extends BorderPane {
     private final String[] nextExitX    = { "Next X", "What is the value of the X coordinate the player should be at in the next map?"};
     private final String[] nextExitY    = { "Next Y", "What is the value of the Y coordinate the player should be at in the next map?"};
     private final String[] direction    = { "Direction", "What is the direction the player should be facing in the next map?"};
-    private final String[] mapLoc       = { "Next map file", "What is the location of the next map file? (Ex: Map0-0.json, TestHouseLarge.json)"};
+    private final String[] mapLoc       = { "Next map file", "What is the location of the next map file? (Ex: Saves\\\\Save01\\\\Maps\\\\Map0-1.json)"};
 
     private Stack<Sprite> removedItems;
 
     public static Sprite marker;
 
+    @FXML private ImageView arrow;
     @FXML private ResourceBundle resources;
     @FXML private URL location;
     @FXML private Button remove;
@@ -170,6 +171,8 @@ public class MapBuilderController extends BorderPane {
                     image.setOnMouseClicked(event -> {
                         selectedSpriteImage.setImage(image.getImage());
                         filePath.setText(f.getAbsolutePath());
+                        marker.setImage(image.getImage());
+                        front.fire();
                     });
 
                     box.setMaxHeight(image.getFitHeight()+10);
@@ -205,6 +208,11 @@ public class MapBuilderController extends BorderPane {
         gc = canvas.getGraphicsContext2D();
 
         drawMap();
+
+        arrow.setOnMouseClicked(event -> {
+            marker.setImage("file:Images\\Arrow.png");
+            drawMap();
+        });
 
         grassBackground.setOnMouseClicked(event ->{
             mapView.setStyle("-fx-background-image: url('GrassBackground.png'); " + BACKGROUND_STRING);
@@ -263,7 +271,9 @@ public class MapBuilderController extends BorderPane {
         });
 
         clear.setOnAction(event -> {
+            String savedBack = mapParser.getBackground();
             mapParser = new MapParser();
+            mapParser.setBackground(savedBack);
             front.fire();
             drawMap();
         });
@@ -391,7 +401,8 @@ public class MapBuilderController extends BorderPane {
         redo.setOnAction(event -> {
             if(removedItems.size() > 0) {
                 Sprite sprite = removedItems.pop();
-                if(!mapParser.addItem(sprite)) removedItems.push(sprite);
+                mapParser.addItem(sprite);
+                removedItems.push(sprite);
                 front.fire();
                 drawMap();
             }
@@ -520,9 +531,7 @@ public class MapBuilderController extends BorderPane {
         NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), enemy, getDialogueArray());
         System.out.println(npc.getImageLocation());
 
-        if(!mapParser.addItem(npc)) {
-            displayIntersectionError();
-        }
+        mapParser.addItem(npc);
     }
 
     private void generateNeutral(String imageLoc) { //For now, the image location is not used because the neutral npc is created like a random one. Random image and direction are assigned until further notice.
@@ -530,9 +539,7 @@ public class MapBuilderController extends BorderPane {
         NPC npc = new NPC(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), neut, getDialogueArray());
         System.out.println(npc.getImageLocation());
 
-        if(!mapParser.addItem(npc)) {
-            displayIntersectionError();
-        }
+        mapParser.addItem(npc);
     }
 
     private String[] getDialogueArray() {
@@ -572,10 +579,7 @@ public class MapBuilderController extends BorderPane {
 
     private void generateLootable(String imageLoc) {
         Lootable loot = new Lootable(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), imageLoc, getItemList());
-
-        if(!mapParser.addItem(loot)) {
-            displayIntersectionError();
-        }
+        mapParser.addItem(loot);
     }
 
     private void generateDisplayItem(String imageLoc) {
@@ -583,9 +587,7 @@ public class MapBuilderController extends BorderPane {
         DisplayItem display = new DisplayItem(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), i);
         display.setImage(imageLoc);
 
-        if(!mapParser.addItem(display)) {
-            displayIntersectionError();
-        }
+        mapParser.addItem(display);
     }
 
     private LinkedList<Item> getItemList() {
@@ -762,9 +764,7 @@ public class MapBuilderController extends BorderPane {
         go.setX(Integer.parseInt(x.getText()));
         go.setY(Integer.parseInt(y.getText()));
 
-        if(!mapParser.addItem(go)) {
-            displayIntersectionError();
-        }
+        mapParser.addItem(go);
     }
 
     private void generateLowerLayer(String imageLoc) {
@@ -784,22 +784,16 @@ public class MapBuilderController extends BorderPane {
 
         upper.setObstacle(false);
 
-        if(!mapParser.addItem(upper)) {
-            displayIntersectionError();
-        }
+        mapParser.addItem(upper);
     }
 
     private void generateMisc(String imageLoc) {
         if(imageLoc.endsWith("SaveArea.png")) {
             Save save = new Save(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()));
-            if(!mapParser.addItem(save)) {
-                displayIntersectionError();
-            }
+            mapParser.addItem(save);
         } else if(imageLoc.endsWith("ExitVisible.png")) {
             Exit exit = new Exit(Integer.parseInt(x.getText()), Integer.parseInt(y.getText()), getIntegerInput(nextExitX), getIntegerInput(nextExitY), getCardinal(), getStringInput(mapLoc));
-            if(!mapParser.addItem(exit)) {
-                displayIntersectionError();
-            }
+            mapParser.addItem(exit);
         }
     }
 
@@ -812,6 +806,7 @@ public class MapBuilderController extends BorderPane {
 
     private void drawMap() {
         gc.clearRect(0, 0, mapView.getPrefWidth(), mapView.getPrefHeight());
+        mapParser.sortSprites();
         mapParser.getMapItems().forEach(sprite -> sprite.render(gc));
     }
 

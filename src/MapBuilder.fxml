@@ -93,5 +93,10 @@
     <Button fx:id="save" focusTraversable="false" layoutX="472.0" layoutY="567.0" mnemonicParsing="false" prefWidth="128.0" text="Write .map " />
     <Button fx:id="load" focusTraversable="false" layoutX="472.0" layoutY="598.0" mnemonicParsing="false" prefWidth="128.0" text="Read .map" />
     <Button fx:id="front" focusTraversable="false" layoutX="472.0" layoutY="625.0" mnemonicParsing="false" prefHeight="33.0" text="Bring marker to front" />
+    <ImageView fx:id="arrow" fitHeight="16.0" fitWidth="16.0" layoutX="468.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@Arrow.png" />
+      </image>
+    </ImageView>
   </children>
 </AnchorPane>

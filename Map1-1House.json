@@ -1,0 +1,382 @@
+{
+  "id": "interior-black",
+  "fileLocation": "Map1-1House.json",
+  "genericObstacles": [
+    {
+      "x": 117,
+      "y": 396,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 428,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 460,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 300,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 332,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 364,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 396,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 428,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 345,
+      "y": 460,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 313,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 281,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 249,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 217,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 217,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 185,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 153,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 364,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 332,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 300,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 117,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 122,
+      "y": 268,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 149,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 181,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 245,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 277,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 309,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 339,
+      "y": 490,
+      "dx": 0,
+      "dy": 0,
+      "width": 32,
+      "height": 32,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    }
+  ],
+  "displayItems": [],
+  "exits": [
+    {
+      "nextMapLocation": "Saves\\\\Save01\\\\Maps\\\\Map1-1.json",
+      "nextX": 206,
+      "nextY": 523,
+      "placement": "South",
+      "x": 220,
+      "y": 505,
+      "dx": 0,
+      "dy": 0,
+      "width": 16,
+      "height": 16,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:Images\\Exit.png"
+    }
+  ],
+  "lootables": [],
+  "lowerLayers": [
+    {
+      "x": 117,
+      "y": 388,
+      "dx": 0,
+      "dy": 0,
+      "width": 256,
+      "height": 128,
+      "visible": true,
+      "isObstacle": false,
+      "location": "file:Images\\Objects\\Lower\\WoodFloor256x128.png"
+    },
+    {
+      "x": 119,
+      "y": 270,
+      "dx": 0,
+      "dy": 0,
+      "width": 256,
+      "height": 128,
+      "visible": true,
+      "isObstacle": false,
+      "location": "file:Images\\Objects\\Lower\\WoodFloor256x128.png"
+    }
+  ],
+  "npcs": [],
+  "saves": [],
+  "upperLayers": []
+}
