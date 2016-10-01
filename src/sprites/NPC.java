@@ -134,4 +134,31 @@ public class NPC extends Sprite {
 	public void setQuestActivationTriggers(LinkedList<Trigger> questActivationTriggers) {
 		this.questActivationTriggers = questActivationTriggers;
 	}
+
+	public void removeUsedTriggers() {
+		/*
+		Npc's are created on map load so they will always retain the same set of triggers as long as you are in the
+		map, this will remove any already used triggers from the Npc before the user can interact with it.
+		Triggers will be removed for already completed and already activated quests.
+		Not very efficient, but it is the best solution I can come up with. Hopefully it isn't too bad.
+		Should be fine since NPCs will not hold that many triggers.
+		 */
+		//TODO implement a way to remove the trigger from the .map file
+		Iterator<Trigger> it = questActivationTriggers.iterator();
+		Trigger t = null;
+		/*(while(it.hasNext()) {
+			t = it.next();
+			if(QuestHandler.isActive(t) || QuestHandler.checkQuestCompletion(t)) {
+				it.remove();
+			}
+		}*/
+
+		it = questTriggers.iterator();
+		while(it.hasNext()) {
+			t = it.next();
+			if(QuestHandler.checkQuestCompletion(t)) {
+				it.remove();
+			}
+		}
+	}
 }

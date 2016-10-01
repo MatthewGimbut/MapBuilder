@@ -112,8 +112,9 @@ public class MapBuilderController extends BorderPane {
     @FXML private Button saveJSON;
     @FXML private Button loadJSON;
     @FXML public Button front;
+    @FXML private Button parseSimple;
 
-    private final int markerSpeed = 5;
+    private final int markerSpeed = 4;
 
 
     public MapBuilderController(Stage primaryStage) {
@@ -208,6 +209,41 @@ public class MapBuilderController extends BorderPane {
         gc = canvas.getGraphicsContext2D();
 
         drawMap();
+
+        parseSimple.setOnAction(event -> {
+            String file = getFileLocation();
+            try {
+                String json = new Scanner(new File(file)).useDelimiter("\\Z").next(); //"\\Z" Delimiter is the end of file character, loading the entire file into the String with one call to next().
+
+                GsonBuilder gson = new GsonBuilder()
+                        .setPrettyPrinting()
+                        .setLenient()
+                        .disableHtmlEscaping()
+                        .registerTypeAdapter(Item.class, new InterfaceAdapter<Item>())
+                        .registerTypeAdapter(Character.class, new InterfaceAdapter<Character>());
+
+                MapJSONTemplate m = gson.create().fromJson(json, MapJSONTemplate.class);
+
+                int x = getIntegerInput(new String[] {"X Coordinate", "How far should the structure be shifted to the right?"});
+                int y = getIntegerInput(new String[] {"Y Coordinate", "How far should the structure be shifted down?"});
+
+                m.getMapItems().forEach(sprite -> {
+                    sprite.setImage(sprite.getImageLocation().replaceAll("(.+(MapBuilder\\\\))", "file:"));
+                    if(sprite.getImageLocation().contains("\\\\")) sprite.setImage(sprite.getImageLocation().replace("\\\\", "\\"));
+                    if(sprite instanceof NPC) {
+                        loadNPC((NPC) sprite);
+                    }
+                    sprite.setX(sprite.getX() + x);
+                    sprite.setY(sprite.getY() + y);
+                });
+                mapParser.getMapItems().addAll(m.getMapItems());
+                drawMap();
+            } catch (IOException e) {
+                System.out.println("Error loading JSON!");
+                System.out.println(e.getMessage());
+            }
+            front.fire();
+        });
 
         arrow.setOnMouseClicked(event -> {
             marker.setImage("file:Images\\Arrow.png");
@@ -458,39 +494,10 @@ public class MapBuilderController extends BorderPane {
                 mapParser.setBackground(m.getId());
 
                 m.getMapItems().forEach(sprite -> {
+                    sprite.setImage(sprite.getImageLocation().replaceAll("(.+(MapBuilder\\\\))", "file:"));
                     if(sprite.getImageLocation().contains("\\\\")) sprite.setImage(sprite.getImageLocation().replace("\\\\", "\\"));
-                    sprite.setImage(sprite.getImageLocation().replace("C:\\Users\\Matthew\\workspace\\MapBuilder\\", ""));
                     if(sprite instanceof NPC) {
-                        NPC npc = (NPC) sprite;
-                        LinkedList<Trigger> activationTriggerTemp = new LinkedList<>();
-                        LinkedList<Trigger> questTriggerTemp = new LinkedList<>();
-
-                        for(Trigger t : npc.getQuestActivationTriggers()) {
-                            MasterQuests master = MasterQuests.valueOf(t.getAssociatedWith());
-                            if(master != null) {
-                                activationTriggerTemp.add(master.getQuest().getQuestAcceptanceTrigger());
-                            } else {
-                                System.out.println("Failed to parse quest " + t.getAssociatedWith());
-                            }
-                        }
-
-                        for(Trigger t : npc.getQuestTriggers()) {
-                            String[] data = t.getAssociatedWith().split("_");
-                            MasterQuests master = MasterQuests.valueOf(data[0]);
-                            int taskNum = Integer.parseInt(data[1], 10);
-                            taskNum--;
-                            if(master != null) {
-                                questTriggerTemp.add(master.getQuest().getAllTasks().get(taskNum).getTrigger());
-                            } else {
-                                System.out.println("Failed to parse quest " + t.getAssociatedWith());
-                            }
-                        }
-
-                        npc.getQuestActivationTriggers().clear();
-                        npc.getQuestTriggers().clear();
-
-                        npc.setQuestActivationTriggers(activationTriggerTemp);
-                        npc.setQuestTriggers(questTriggerTemp);
+                        loadNPC((NPC) sprite);
                     }
                 });
                 mapParser.setMapItems(m.getMapItems());
@@ -503,6 +510,44 @@ public class MapBuilderController extends BorderPane {
         });
 
         this.setCenter(anchor);
+    }
+
+    /**
+     * Reloads any quest trigger related material in the JSON for an npc.
+     * @param npc
+     */
+    private void loadNPC(NPC npc) {
+        LinkedList<Trigger> activationTriggerTemp = new LinkedList<>();
+        LinkedList<Trigger> questTriggerTemp = new LinkedList<>();
+
+        for(Trigger t : npc.getQuestActivationTriggers()) {
+            MasterQuests master = MasterQuests.valueOf(t.getAssociatedWith());
+            if(master != null) {
+                activationTriggerTemp.add(master.getQuest().getQuestAcceptanceTrigger());
+            } else {
+                System.out.println("Failed to parse quest " + t.getAssociatedWith());
+            }
+        }
+
+        for(Trigger t : npc.getQuestTriggers()) {
+            String[] data = t.getAssociatedWith().split("_");
+            MasterQuests master = MasterQuests.valueOf(data[0]);
+            int taskNum = Integer.parseInt(data[1], 10);
+            taskNum--;
+            if(master != null) {
+                questTriggerTemp.add(master.getQuest().getAllTasks().get(taskNum).getTrigger());
+            } else {
+                System.out.println("Failed to parse quest " + t.getAssociatedWith());
+            }
+        }
+
+        npc.getQuestActivationTriggers().clear();
+        npc.getQuestTriggers().clear();
+
+        npc.setQuestActivationTriggers(activationTriggerTemp);
+        npc.setQuestTriggers(questTriggerTemp);
+
+        npc.removeUsedTriggers();
     }
 
     private String getFileLocation() {

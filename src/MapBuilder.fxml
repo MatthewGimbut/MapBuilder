@@ -81,22 +81,27 @@
     <FlowPane hgap="10.0" layoutX="18.0" layoutY="506.0" minHeight="42.0" prefHeight="42.0" prefWidth="454.0" vgap="5.0">
       <children>
         <Label text="X:" />
-        <TextField fx:id="x" focusTraversable="false" prefWidth="200.0" promptText="X-Coordinate" />
+        <TextField fx:id="x" focusTraversable="false" prefWidth="150.0" promptText="X-Coordinate" />
         <Label text="Y:" />
-        <TextField fx:id="y" focusTraversable="false" prefWidth="200.0" promptText="Y-Coordinate" />
+        <TextField fx:id="y" focusTraversable="false" prefWidth="150.0" promptText="Y-Coordinate" />
         <CheckBox fx:id="hostile" disable="true" mnemonicParsing="false" text="Hostile" visible="false" />
       </children>
     </FlowPane>
     <CheckBox fx:id="obstacle" disable="true" layoutX="532.0" layoutY="690.0" mnemonicParsing="false" text="isObstacle" visible="false" />
-    <Button fx:id="saveJSON" focusTraversable="false" layoutX="472.0" layoutY="506.0" mnemonicParsing="false" prefWidth="128.0" text="Write .json" />
-    <Button id="saveJSON" fx:id="loadJSON" focusTraversable="false" layoutX="472.0" layoutY="537.0" mnemonicParsing="false" prefWidth="128.00009999999747" text="Read .json" />
-    <Button fx:id="save" focusTraversable="false" layoutX="472.0" layoutY="567.0" mnemonicParsing="false" prefWidth="128.0" text="Write .map " />
-    <Button fx:id="load" focusTraversable="false" layoutX="472.0" layoutY="598.0" mnemonicParsing="false" prefWidth="128.0" text="Read .map" />
-    <Button fx:id="front" focusTraversable="false" layoutX="472.0" layoutY="625.0" mnemonicParsing="false" prefHeight="33.0" text="Bring marker to front" />
     <ImageView fx:id="arrow" fitHeight="16.0" fitWidth="16.0" layoutX="468.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@Arrow.png" />
       </image>
     </ImageView>
+    <VBox alignment="CENTER" layoutX="438.0" layoutY="483.0" prefHeight="223.0" prefWidth="180.0" spacing="3.0">
+      <children>
+        <Button fx:id="saveJSON" focusTraversable="false" mnemonicParsing="false" prefWidth="128.0" text="Write .json" />
+        <Button id="saveJSON" fx:id="loadJSON" focusTraversable="false" mnemonicParsing="false" prefWidth="128.00009999999747" text="Read .json" />
+        <Button fx:id="parseSimple" mnemonicParsing="false" prefWidth="128.0" text="Read simple .json" />
+        <Button fx:id="save" focusTraversable="false" mnemonicParsing="false" prefWidth="128.0" text="Write .map " />
+        <Button fx:id="load" focusTraversable="false" mnemonicParsing="false" prefWidth="128.0" text="Read .map" />
+        <Button fx:id="front" focusTraversable="false" mnemonicParsing="false" prefHeight="33.0" text="Bring marker to front" />
+      </children>
+    </VBox>
   </children>
 </AnchorPane>

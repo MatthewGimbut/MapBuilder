@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a86e37da-31fb-45b3-b482-cf2407e3ef48" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Images/Objects/Nature/TorchAnimated.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapBuilderController$CoordinateListener.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapBuilderController$CoordinateListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapBuilderController.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapBuilderController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" afterPath="$PROJECT_DIR$/out/production/MapBuilder/map/MapParser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Map0-1.json" afterPath="$PROJECT_DIR$/Map0-1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilder.fxml" afterPath="$PROJECT_DIR$/out/production/MapBuilder/MapBuilder.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Map1-1House.json" afterPath="$PROJECT_DIR$/Map1-1House.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SmallHouse.json" afterPath="$PROJECT_DIR$/SmallHouse.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapBuilder.fxml" afterPath="$PROJECT_DIR$/src/MapBuilder.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/items/Armor/Legs.java" afterPath="$PROJECT_DIR$/src/items/Armor/Legs.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map/MapBuilderController.java" afterPath="$PROJECT_DIR$/src/map/MapBuilderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/map/MapParser.java" afterPath="$PROJECT_DIR$/src/map/MapParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sprites/NPC.java" afterPath="$PROJECT_DIR$/src/sprites/NPC.java" />
     </list>
     <ignored path="MapBuilder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +36,21 @@
       <file leaf-file-name="MapBuilderController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/map/MapBuilderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4397">
-              <caret line="808" column="32" selection-start-line="808" selection-start-column="32" selection-end-line="808" selection-end-column="32" />
+            <state relative-caret-position="589">
+              <caret line="231" column="132" selection-start-line="231" selection-start-column="132" selection-end-line="231" selection-end-column="132" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="948">
+              <caret line="162" column="5" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,10 +111,21 @@
       <file leaf-file-name="MapParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
+            <state relative-caret-position="18394">
               <caret line="1101" column="11" selection-start-line="1101" selection-start-column="11" selection-end-line="1101" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#6191#6200#0" expanded="false" />
+                <element signature="e#6970#6979#0" expanded="false" />
+                <element signature="e#40545#40546#0" expanded="false" />
+                <element signature="e#40571#40572#0" expanded="false" />
+                <element signature="e#40615#40616#0" expanded="false" />
+                <element signature="e#40644#40645#0" expanded="false" />
+                <element signature="e#40693#40694#0" expanded="false" />
+                <element signature="e#40728#40729#0" expanded="false" />
+                <element signature="e#40762#40763#0" expanded="false" />
+                <element signature="e#40791#40792#0" expanded="false" />
+                <element signature="e#40834#40835#0" expanded="false" />
+                <element signature="e#40861#40862#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,10 +134,13 @@
       <file leaf-file-name="MapJSONTemplate.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
+            <state relative-caret-position="1632">
               <caret line="97" column="38" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4156#4157#0" expanded="false" />
+                <element signature="e#4199#4200#0" expanded="false" />
+                <element signature="e#4384#4385#0" expanded="false" />
+                <element signature="e#4409#4410#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -182,16 +202,16 @@
         <option value="$PROJECT_DIR$/src/quests/QuestHandler.java" />
         <option value="$PROJECT_DIR$/src/quests/master/MasterQuests.java" />
         <option value="$PROJECT_DIR$/src/quests/trigger/Trigger.java" />
-        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
         <option value="$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java" />
         <option value="$PROJECT_DIR$/src/quests/master/AllStoryQuestAcceptanceTriggers.java" />
         <option value="$PROJECT_DIR$/src/quests/master/AllStoryTriggers.java" />
         <option value="$PROJECT_DIR$/src/map/MapJSONTemplate.java" />
         <option value="$PROJECT_DIR$/src/MapBuilderController.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/map/MapBuilderController.java" />
         <option value="$PROJECT_DIR$/src/map/MapParser.java" />
         <option value="$PROJECT_DIR$/src/items/Armor/Legs.java" />
+        <option value="$PROJECT_DIR$/src/sprites/NPC.java" />
+        <option value="$PROJECT_DIR$/src/map/MapBuilderController.java" />
       </list>
     </option>
   </component>
@@ -226,8 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -339,6 +357,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -947,26 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2060#2061#0" expanded="false" />
-            <element signature="e#2079#2080#0" expanded="false" />
-            <element signature="e#2128#2129#0" expanded="false" />
-            <element signature="e#2153#2154#0" expanded="false" />
-            <element signature="e#3679#3680#0" expanded="false" />
-            <element signature="e#3706#3707#0" expanded="false" />
-            <element signature="e#3774#3775#0" expanded="false" />
-            <element signature="e#3815#3816#0" expanded="false" />
-            <element signature="e#3875#3876#0" expanded="false" />
-            <element signature="e#3912#3913#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/quests/trigger/LocationTrigger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1057,20 +1057,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapJSONTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
+        <state relative-caret-position="1632">
           <caret line="97" column="38" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4156#4157#0" expanded="false" />
+            <element signature="e#4199#4200#0" expanded="false" />
+            <element signature="e#4384#4385#0" expanded="false" />
+            <element signature="e#4409#4410#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
+        <state relative-caret-position="18394">
           <caret line="1101" column="11" selection-start-line="1101" selection-start-column="11" selection-end-line="1101" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#6191#6200#0" expanded="false" />
+            <element signature="e#6970#6979#0" expanded="false" />
+            <element signature="e#40545#40546#0" expanded="false" />
+            <element signature="e#40571#40572#0" expanded="false" />
+            <element signature="e#40615#40616#0" expanded="false" />
+            <element signature="e#40644#40645#0" expanded="false" />
+            <element signature="e#40693#40694#0" expanded="false" />
+            <element signature="e#40728#40729#0" expanded="false" />
+            <element signature="e#40762#40763#0" expanded="false" />
+            <element signature="e#40791#40792#0" expanded="false" />
+            <element signature="e#40834#40835#0" expanded="false" />
+            <element signature="e#40861#40862#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1091,10 +1105,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sprites/NPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="948">
+          <caret line="162" column="5" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/map/MapBuilderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4397">
-          <caret line="808" column="32" selection-start-line="808" selection-start-column="32" selection-end-line="808" selection-end-column="32" />
+        <state relative-caret-position="589">
+          <caret line="231" column="132" selection-start-line="231" selection-start-column="132" selection-end-line="231" selection-end-column="132" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

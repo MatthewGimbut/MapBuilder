@@ -331,6 +331,17 @@
       "visible": true,
       "isObstacle": true,
       "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
+    },
+    {
+      "x": 156,
+      "y": 308,
+      "dx": 0,
+      "dy": 0,
+      "width": 10,
+      "height": 36,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
     }
   ],
   "displayItems": [],
@@ -351,7 +362,47 @@
       "location": "file:Images\\Exit.png"
     }
   ],
-  "lootables": [],
+  "lootables": [
+    {
+      "items": [
+        {
+          "type": "items.Armor.Boots",
+          "data": {
+            "armorType": "wood",
+            "atk": 0,
+            "magic": 0,
+            "def": 3,
+            "imageLocation": "Images\\Armors\\wood\\Boots.png",
+            "value": 10,
+            "howRare": "JUNK",
+            "r": {
+              "seed": 166586359124084,
+              "nextNextGaussian": 0.0,
+              "haveNextNextGaussian": false
+            },
+            "random": 1,
+            "speedModifier": 1,
+            "weight": 3.0,
+            "hpBoost": 0,
+            "manaBoost": 0,
+            "simpleName": "wood boots",
+            "toolTipText": "A pair of wood boots",
+            "isCurrentlyEquipped": false,
+            "isFavorite": false
+          }
+        }
+      ],
+      "x": 308,
+      "y": 308,
+      "dx": 0,
+      "dy": 0,
+      "width": 34,
+      "height": 33,
+      "visible": true,
+      "isObstacle": true,
+      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Lootables\\SmallCrates.png"
+    }
+  ],
   "lowerLayers": [
     {
       "x": 117,
@@ -376,7 +427,48 @@
       "location": "file:Images\\Objects\\Lower\\WoodFloor256x128.png"
     }
   ],
-  "npcs": [],
+  "npcs": [
+    {
+      "chara": {
+        "type": "characters.Neutral",
+        "data": {
+          "currentStatusEffects": [],
+          "lvl": 1,
+          "name": "Mr. Meme",
+          "currentHP": 100,
+          "maxHP": 100,
+          "currentMana": 100,
+          "maxMana": 100,
+          "atk": 1,
+          "magic": 1,
+          "def": 1,
+          "speed": 1,
+          "carryCap": 10.0,
+          "currentCarry": 0.0,
+          "isDead": false,
+          "image": "Images\\Characters\\GenericNeutral\\GenericNeutralWest.png",
+          "south": "Images\\Characters\\GenericNeutral\\GenericNeutralSouth.png",
+          "north": "Images\\Characters\\GenericNeutral\\GenericNeutralNorth.png",
+          "east": "Images\\Characters\\GenericNeutral\\GenericNeutralEast.png",
+          "west": "Images\\Characters\\GenericNeutral\\GenericNeutralWest.png"
+        }
+      },
+      "questActivationTriggers": [],
+      "questTriggers": [],
+      "x": 164,
+      "y": 392,
+      "dx": 0,
+      "dy": 0,
+      "width": 16,
+      "height": 39,
+      "visible": true,
+      "isObstacle": true,
+      "message": [
+        "memememememememeemememememe"
+      ],
+      "location": "file:Images\\Characters\\GenericNeutral\\GenericNeutralWest.png"
+    }
+  ],
   "saves": [],
   "upperLayers": []
 }
