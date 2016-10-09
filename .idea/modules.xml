@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MapBuilder.iml" filepath="$PROJECT_DIR$/MapBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TheDarkForestJFXHDRemastered/TheDarkForestJFXHDRemastered.iml" filepath="$PROJECT_DIR$/../TheDarkForestJFXHDRemastered/TheDarkForestJFXHDRemastered.iml" />
     </modules>
   </component>
 </project>

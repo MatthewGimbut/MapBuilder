@@ -56,6 +56,7 @@ public class MapBuilderController extends BorderPane {
     private final String ITEM_DIRECTORY         = "Images\\Objects\\Items";
     private final String LOWER_DIRECTORY        = "Images\\Objects\\Lower";
     private final String UPPER_DIRECTORY        = "Images\\Objects\\Upper";
+
     private final String[] attack               = { "Attack (integer)"          , "Please enter the attack stat." };
     private final String[] defense              = { "Defense (integer)"         , "Please enter the defense stat." };
     private final String[] magic                = { "Magic (integer)"           , "Please enter the magic stat." };
@@ -705,19 +706,19 @@ public class MapBuilderController extends BorderPane {
             if (promptResult.get() == buttonTypeOne){ //Unique
                 switch(resultString) {
                     case "Boots":
-                        i = new Boots(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Boots(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "ChestPiece":
-                        i = new ChestPiece(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new ChestPiece(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Gloves":
-                        i = new Gloves(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Gloves(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Helmet":
-                        i = new Helmet(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Helmet(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Shield":
@@ -725,7 +726,7 @@ public class MapBuilderController extends BorderPane {
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Legs":
-                        i = new Legs(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Legs(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType(), getStringInput(fileLoc), getStringInput(name), getStringInput(tooltip));
                         break;
                     case "Axe":
@@ -752,19 +753,19 @@ public class MapBuilderController extends BorderPane {
             } else if (promptResult.get() == buttonTypeTwo) { //Generic
                 switch(resultString) {
                     case "Boots":
-                        i = new Boots(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Boots(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "ChestPiece":
-                        i = new ChestPiece(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new ChestPiece(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Gloves":
-                        i = new Gloves(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Gloves(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Helmet":
-                        i = new Helmet(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Helmet(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Shield":
@@ -772,7 +773,7 @@ public class MapBuilderController extends BorderPane {
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Legs":
-                        i = new Legs(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getIntegerInput(speed), getDoubleInput(weight),
+                        i = new Legs(getIntegerInput(attack), getIntegerInput(magic), getIntegerInput(defense), getDoubleInput(weight),
                                 getIntegerInput(hpBoost), getIntegerInput(manaBoost), getIntegerInput(gold), getRarity(), getArmorType());
                         break;
                     case "Axe":

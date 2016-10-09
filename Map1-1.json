@@ -1056,7 +1056,7 @@
       "height": 39,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\Tree.png"
+      "location": "file:Images\\Objects\\Nature\\Tree.png"
     },
     {
       "x": 350,
@@ -1067,7 +1067,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 430,
@@ -1078,7 +1078,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 350,
@@ -1089,7 +1089,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 350,
@@ -1100,7 +1100,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 430,
@@ -1111,7 +1111,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 430,
@@ -1122,7 +1122,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 335,
@@ -1133,7 +1133,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 335,
@@ -1144,7 +1144,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 335,
@@ -1155,7 +1155,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 445,
@@ -1166,7 +1166,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 445,
@@ -1177,7 +1177,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 445,
@@ -1188,7 +1188,7 @@
       "height": 36,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Nature\\TorchTest.gif"
+      "location": "file:Images\\Objects\\Nature\\TorchTest.gif"
     },
     {
       "x": 170,
@@ -1199,7 +1199,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     },
     {
       "x": 170,
@@ -1210,7 +1210,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     },
     {
       "x": 170,
@@ -1221,7 +1221,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     },
     {
       "x": 202,
@@ -1232,7 +1232,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     },
     {
       "x": 234,
@@ -1243,7 +1243,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     },
     {
       "x": 234,
@@ -1254,7 +1254,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     },
     {
       "x": 234,
@@ -1265,7 +1265,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": true,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Structures\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Structures\\WoodWall32.png"
     }
   ],
   "displayItems": [],
@@ -1378,7 +1378,7 @@
       "height": 64,
       "visible": true,
       "isObstacle": false,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Lower\\DarkDoorwayTall.png"
+      "location": "file:Images\\Objects\\Lower\\DarkDoorwayTall.png"
     }
   ],
   "npcs": [
@@ -1427,19 +1427,7 @@
       "location": "file:Images\\Characters\\GenericNeutral\\GenericNeutralSouth.png"
     }
   ],
-  "saves": [
-    {
-      "x": 65,
-      "y": 605,
-      "dx": 0,
-      "dy": 0,
-      "width": 44,
-      "height": 39,
-      "visible": true,
-      "isObstacle": true,
-      "location": "file:Images\\SaveArea.png"
-    }
-  ],
+  "saves": [],
   "upperLayers": [
     {
       "x": 170,
@@ -1450,7 +1438,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": false,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Upper\\WoodRoofLeft32.png"
+      "location": "file:Images\\Objects\\Upper\\WoodRoofLeft32.png"
     },
     {
       "x": 234,
@@ -1461,7 +1449,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": false,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Upper\\WoodRoofRight32.png"
+      "location": "file:Images\\Objects\\Upper\\WoodRoofRight32.png"
     },
     {
       "x": 202,
@@ -1472,7 +1460,7 @@
       "height": 32,
       "visible": true,
       "isObstacle": false,
-      "location": "file:C:\\Users\\Matthew\\workspace\\MapBuilder\\Images\\Objects\\Upper\\WoodWall32.png"
+      "location": "file:Images\\Objects\\Upper\\WoodWall32.png"
     }
   ]
 }

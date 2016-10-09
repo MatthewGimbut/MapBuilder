@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="TheDarkForestJFXHDRemastered">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../TheDarkForestJFXHDRemastered/gson-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../TheDarkForestJFXHDRemastered/log4j-api-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../TheDarkForestJFXHDRemastered/log4j-core-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../TheDarkForestJFXHDRemastered/TheDarkForestJFXHDRemastered.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

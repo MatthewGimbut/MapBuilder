@@ -110,6 +110,10 @@ public class MapJSONTemplate {
         return getMapItems().size();
     }
 
+    public void add(Sprite sprite) {
+
+    }
+
     /**
      * Returns the CSS ID property of the GamePane to set the background.
      * @return A string containing the CSS ID for the background.

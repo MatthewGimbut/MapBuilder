@@ -711,31 +711,31 @@ public class MapParser {
 			break;
 		case "boots":
             item = new Boots(parseInt(info[4]), parseInt(info[5]), parseInt(info[6]),
-                    parseInt(info[7]), Double.parseDouble(info[8]), parseInt(info[9]),
+                    Double.parseDouble(info[8]), parseInt(info[9]),
                     parseInt(info[10]), parseInt(info[11]), determineRarity(info[12]),
                     determineArmorType(info[13]), info[14], info[15], info[16]);
 			break;
 		case "chest":
             item = new ChestPiece(parseInt(info[4]), parseInt(info[5]), parseInt(info[6]),
-                    parseInt(info[7]), Double.parseDouble(info[8]), parseInt(info[9]),
+                    Double.parseDouble(info[8]), parseInt(info[9]),
                     parseInt(info[10]), parseInt(info[11]), determineRarity(info[12]),
                     determineArmorType(info[13]), info[14], info[15], info[16]);
 			break;
 		case "gloves":
             item = new Gloves(parseInt(info[4]), parseInt(info[5]), parseInt(info[6]),
-                    parseInt(info[7]), Double.parseDouble(info[8]), parseInt(info[9]),
+                    Double.parseDouble(info[8]), parseInt(info[9]),
                     parseInt(info[10]), parseInt(info[11]), determineRarity(info[12]),
                     determineArmorType(info[13]), info[14], info[15], info[16]);
 			break;
 		case "helmet":
             item = new Helmet(parseInt(info[4]), parseInt(info[5]), parseInt(info[6]),
-                    parseInt(info[7]), Double.parseDouble(info[8]), parseInt(info[9]),
+                    Double.parseDouble(info[8]), parseInt(info[9]),
                     parseInt(info[10]), parseInt(info[11]), determineRarity(info[12]),
                     determineArmorType(info[13]), info[14], info[15], info[16]);
 			break;
 		case "legs":
             item = new Legs(parseInt(info[4]), parseInt(info[5]), parseInt(info[6]),
-                    parseInt(info[7]), Double.parseDouble(info[8]), parseInt(info[9]),
+                    Double.parseDouble(info[8]), parseInt(info[9]),
                     parseInt(info[10]), parseInt(info[11]), determineRarity(info[12]),
                     determineArmorType(info[13]), info[14], info[15], info[16]);
 			break;
@@ -768,7 +768,7 @@ public class MapParser {
 		sb.append("item|");
 		sb.append(determineItemTag(i));
         sb.append("0|0|").append(i.getAtk()).append(DELIMITER_STRING).append(i.getMagic()).append(DELIMITER_STRING).append(i.getDef())
-                .append(DELIMITER_STRING).append(i.getSpeedModifier()).append(DELIMITER_STRING).append(i.getWeight()).append(DELIMITER_STRING).append(i.getHpBoost())
+                .append(DELIMITER_STRING).append(i.getCooldown()).append(DELIMITER_STRING).append(i.getWeight()).append(DELIMITER_STRING).append(i.getHpBoost())
                 .append(DELIMITER_STRING).append(i.getManaBoost()).append(DELIMITER_STRING).append(i.getValue()).append(DELIMITER_STRING);
 		sb.append(determineRarityTag(i));
 
@@ -797,7 +797,7 @@ public class MapParser {
 		sb.append("item|");
 		sb.append(determineItemTag(i));
 		sb.append(di.getX()).append(DELIMITER_STRING).append(di.getY()).append(DELIMITER_STRING).append(i.getAtk()).append(DELIMITER_STRING)
-                .append(i.getMagic()).append(DELIMITER_STRING).append(i.getDef()).append(DELIMITER_STRING).append(i.getSpeedModifier())
+                .append(i.getMagic()).append(DELIMITER_STRING).append(i.getDef()).append(DELIMITER_STRING).append(i.getCooldown())
                 .append(DELIMITER_STRING).append(i.getWeight()).append(DELIMITER_STRING).append(i.getHpBoost()).append(DELIMITER_STRING)
                 .append(i.getManaBoost()).append(DELIMITER_STRING).append(i.getValue()).append(DELIMITER_STRING);
 		sb.append(determineRarityTag(i));
